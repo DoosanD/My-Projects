@@ -183,3 +183,13 @@ console.log("Ovde se nastavlja!");
 
 // pitaMaker(1, 8 ,7);
 
+function deljivSaTri(broj) {
+  let tri = (broj % 3)
+  if (tri == 0) {
+    alert("Broj je deljiv sa brojem tri.")
+  } else {
+    alert("Broj nije deljiv sa brojem tri")
+  }
+  return
+}
+deljivSaTri(6)
