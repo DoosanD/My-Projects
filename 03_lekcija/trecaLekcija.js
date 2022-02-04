@@ -192,4 +192,10 @@ function deljivSaTri(broj) {
   }
   return
 }
-deljivSaTri(6)
+function brojDeljivSaTri(broj){
+  if (broj%3==0) {
+      return "True"
+  } else {
+      return "False"
+  }
+}
