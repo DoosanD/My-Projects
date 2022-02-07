@@ -199,3 +199,117 @@ function brojDeljivSaTri(broj){
       return "False"
   }
 }
+
+function suma(nizBrojeva) {
+  console.log("TRALALALLALALALA!");
+  let sumaBrojeva = 0;
+  console.log(nizBrojeva);
+  for (let i = 0; i < nizBrojeva.length; i++) {
+  sumaBrojeva = sumaBrojeva + nizBrojeva[i];
+  console.log(`Sada je suma ${sumaBrojeva}`);
+  }
+  return sumaBrojeva;
+}
+
+
+
+function srednjaVrednostNiza(Niz){
+  let suma = 0;
+  for (let i = 0; i < Niz.length; i++) {
+    zbir = Niz + Niz[i]
+  }
+  return zbir/Niz // ovde je greska
+}
+  
+
+// Napisati funkciju koja racuna srednju vrednost niza brojeva.
+// Napisati funkciju koja pronalazi najmanji element u nizu brojeva.
+// Napisati funkciju koja pronalazi najveci element u nizu brojeva. 
+
+// Napisati funkciju koja racuna srednju vrednost niza brojeva.
+// Napisati funkciju koja pronalazi najmanji element u nizu brojeva.
+// Napisati funkciju koja pronalazi najveci element u nizu brojeva.
+// "use strict"
+// let zrak = 5; // zrak = 5
+// let zrak1 = zrak++; //zrak1=5, a nakon toga uvecaj zrak za 1
+// // zrak1=zrak
+// // zrak= zrak +1
+// alert(zrak1);
+// //zrak je sada 6
+// let zrak2 = ++zrak; //zrak2=7, i zrak ce se uvecati za 1, znaci bice 7
+// alert(zrak2);
+// Napisati funkciju koja racuna srednju vrednost niza brojeva.
+// niz = [1, 2, 3]
+function srednjaVrednost(niz) {
+  let sumaBrojeva = 0;
+  for (let i = 0; i < niz.length; i++) {
+      sumaBrojeva = sumaBrojeva + niz[i]
+  }
+  return sumaBrojeva / niz.length
+}
+console.log("srednja vrednost niza je", srednjaVrednost([1, 2, 3]))
+function suma(nizBrojeva) {
+  let sumaBrojeva = 0;
+  for (let i = 0; i < nizBrojeva.length; i++) {
+      sumaBrojeva = sumaBrojeva + nizBrojeva[i];
+  }
+  return sumaBrojeva;
+}
+function srednjaVr1(niz) {
+  return suma(niz) / niz.length
+}
+// console.log(srednjaVr1([2, 3, 4]))
+// console.log(suma())
+// Napisati funkciju koja pronalazi najveci element u nizu brojeva.
+// prvi element niza je 1, i on je u uglastim zagradama niz[0]
+let brojevi=[1,-1,3,2,5,4]
+console.log('brojevi su', brojevi)
+function najveciElement(niz) { //niz ne postoji, niz je parametar, tj ova funkcija prima jedan parametar
+  let najveci = niz[0] //sada je 1
+  console.log('trenutno najveci', najveci)
+  for (let i = 0; i<niz.length; i++) {
+      console.log('broj je', niz[i])
+      if (niz[i]>najveci) {
+          najveci = niz[i]
+          console.log('sada je najveci', najveci)
+      }
+  }
+  return najveci
+}
+console.log(najveciElement(brojevi))
+
+    function suma(nizBrojeva) {
+      console.log("TRALALALLALALALA!");
+      let sumaBrojeva = 0;
+      console.log(nizBrojeva);
+      for (let i = 0; i < nizBrojeva.length; i++) {
+        sumaBrojeva = sumaBrojeva + nizBrojeva[i];
+        console.log(`Sada je suma ${sumaBrojeva}`);
+      }
+      return sumaBrojeva;
+    }
+
+    const proizvodSvihBrojeva = function (arr) {
+      let proizvod = 1;
+      for (let i = 0; i < arr.length; i++) {
+        proizvod *= arr[i];
+      }
+      return proizvod;
+    };
+    console.log(proizvodSvihBrojeva([1, 2, 3, 4, 5]));
+
+    // Napisati funkciju koja racuna srednju vrednost niza brojeva.
+    // Napisati funkciju koja pronalazi najmanji element u nizu brojeva.
+    // Napisati funkciju koja pronalazi najveci element u nizu brojeva.
+
+    const najveciElementNiza = function (arr) {
+      let max = arr[0];
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+          max = arr[i];
+        }
+      }
+      return max;
+    };
+    
+    console.log(najveciElementNiza([2, 3, 4, 5, 0, -9]));
