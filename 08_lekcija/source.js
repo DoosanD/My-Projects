@@ -79,3 +79,63 @@ let razlikaUMasi = absTwo(simaMasa, nenadMasa);
 // } else {
 //   razlikaUMasi = nenadMasa - simaMasa;
 // }
+
+// 21.02.2022
+
+const pera = {
+  godiste: 2000,
+  starost: function (god) {
+    if (god - this.godiste > 10) {
+      console.log(`Godina je ${god}`);
+      return this.starost(god - 1);
+    } else {
+      console.log("Sada mozemo da se vratimo iz rekurzije");
+      return god - this.godiste;
+    }
+  },
+};
+
+console.log(pera.starost(2015));
+
+const dani = ["Ponedeljak", "Utorak", "Sreda", "Cetvrtak", "Petak"];
+let dan = dani[2];
+
+
+/*  Domaci
+
+function imenaProvera() {
+    let muskaImena = ["Milos", "Filip", "Marko", "Nikola", "Uros", "Dusan"];
+    let mojeIme = "Filip";
+    let has = false;
+    muskaImena.forEach(ime => {
+        if (ime == mojeIme) {
+            has = true;
+        }
+    })
+    if (has) {
+        alert("Moje ime se nalazi u nizu")
+    }
+    else {
+        alert("Moje ime se ne nalazi u nizu")
+    }
+}
+
+'use strict';
+const duzinaNiza = niz => {
+    let i;
+    for (i = 0; niz[i] || niz[i] == 0; i++);
+    return console.log(Duzina niza je ${i}!);
+}
+duzinaNiza([0, -2, 'Audi', '0', 5, 3, 8, 0.3, 'Itd...']);
+
+
+const obrniNiz= function(niz){
+    let noviNiz=[];
+    for(let i =0; i<=niz.length;i++)
+    {noviNiz.unshift(niz[i])};
+    console.log(noviNiz)
+};
+
+
+
+*/
