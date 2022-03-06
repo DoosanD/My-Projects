@@ -34,7 +34,9 @@ console.log(prodavnica);
 
 /*  21.02.2022
 
-Stringovi imaju dosta metoda koje mozemo da upotrebimo da bismo manipulisali sa njima. Uzmimo na primer da zelimo da saznamo da li neki string pocinje sa karakterom “A”. To mozemo da uradimo sa metodom string.startsWith(substring [, position]) na sledeci nacin:
+Stringovi imaju dosta metoda koje mozemo da upotrebimo da bismo manipulisali sa njima. 
+Uzmimo na primer da zelimo da saznamo da li neki string pocinje sa karakterom “A”. 
+To mozemo da uradimo sa metodom string.startsWith(substring [, position]) na sledeci nacin:
 let planina = ‘Avala’;
 planina.startsWith(“A”) vraca true. Ako bi naziv planine bio:
 planina=”Kopaonik”;
@@ -47,7 +49,8 @@ let planinaMalimSlovima = planina.toLowerCase();
 Sada je vrednost promenljive planinaMalimSlovima:  “avala”.
 Za dobijanje stringa sa svim velikim slovima koristimo string.toUpperCase(). 
 Za dobijanje stringa bez “belih znakova” na pocetku i kraju koristimo string.trim(). 
-Ako zelimo da dobijemo niz koji smo dobili deljenjem polaznog stringa na manje stringove ali tako sto za delenje koristimo koristimo odredjeni separator, koristimo metod string.split(separator) . Npr:
+Ako zelimo da dobijemo niz koji smo dobili deljenjem polaznog stringa na manje stringove ali tako sto za delenje koristimo koristimo odredjeni separator,
+koristimo metod string.split(separator) . Npr:
 let text = “Ana voli Milovana”
 let reci= text.split() 
 U promenljivoj reci se nalazi niz [“Ana”, “vol”,  “Milovana”] . Predefinisani separator je space. 
