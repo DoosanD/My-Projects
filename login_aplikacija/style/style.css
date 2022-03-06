@@ -1,0 +1,49 @@
+.naslov_login {
+  color: blue;
+  text-align: center;
+  padding: 2rem;
+}
+
+.label_text {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: blue;
+}
+
+.border_form {
+  padding: 15px;
+  display: grid;
+  border: 1px solid blue;
+}
+
+.button {
+  color: blue;
+}
+
+.ul_display {
+  padding: 0.5rem;
+  display: inline;
+}
+
+.li_display {
+  background-color: lightblue;
+  display: inline;
+  padding: 0.5rem;
+}
+
+.text_link {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.text_link:hover {
+  font-weight: bold;
+  color: green;
+}
+
+.slika_sekcija {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  text-align: start;
+}
