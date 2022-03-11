@@ -26,7 +26,7 @@
 }
 
 .li_display {
-  background-color: lightblue;
+  background-color: rgb(29, 166, 207);
   display: inline;
   padding: 0.5rem;
 }
@@ -46,4 +46,11 @@
   height: 200px;
   display: flex;
   text-align: start;
+}
+.w3-button {
+  font-size: 50px;
+  padding: 0.5rem;
+  display: inherit;
+  background-color: rgb(0, 0, 0);
+  padding: 0.5rem;
 }
