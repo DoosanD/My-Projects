@@ -1,0 +1,8 @@
+.unos {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #eee;
+  background-color: rgb(81, 71, 212);
+}

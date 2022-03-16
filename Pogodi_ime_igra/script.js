@@ -1,12 +1,12 @@
 "use strict";
 
-// const displayMessage = function (message) {
-//   document.querySelector(".message").textContent = message;
-// };
+const displayMessage = function (message) {
+  document.querySelector(".message").textContent = message;
+};
 
 // console.log(document.querySelector(".message"));
 // document.querySelector(".message").textContent = "U imenu Branka imas 6 slova";
-// //document.querySelector(".left").setAttribute("style", "width:22rem");
+// document.querySelector(".left").setAttribute("style", "width:22rem");
 // document.querySelector(".btn").addEventListener("click", function () {
 //   alert("Zdravo svima!!!");
 // });
@@ -16,4 +16,3 @@ document.querySelector(".check").addEventListener("click", function () {
   console.log(typeof ime);
   document.querySelector(".score").textContent = ime.length;
 });
-prompt("unesi nesto");

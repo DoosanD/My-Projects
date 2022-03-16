@@ -31,7 +31,6 @@ sik = staIKoliko();
 obradiObjekat(prodavnica, sik["sta"], sik["koliko"]);
 console.log(prodavnica);
 
-
 /*  21.02.2022
 
 Stringovi imaju dosta metoda koje mozemo da upotrebimo da bismo manipulisali sa njima. 
@@ -177,3 +176,21 @@ for (let i = 0; i < zadatiString.length; i++) {
   }
 }
 console.log(nizIndeksa);
+
+setTimeout(() => {
+  console.log("Joel");
+  setTimeout(() => {
+    console.log("Victoria");
+    setTimeout(() => {
+      console.log("John");
+      setTimeout(() => {
+        console.log("Doe");
+        setTimeout(() => {
+          console.log("Sarah");
+        }, 2000);
+      }, 2000);
+    }, 2000);
+  }, 2000);
+}, 2000);
+//This above example will work, but it will be difficult to comprehend, debug, or even add error handling to.
+//This is referred to as"Callback Hell".  Callback hell is a big issue caused by coding with complex nested callbacks.

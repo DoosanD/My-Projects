@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vozni Park</title>
+  </head>
+  <body>
+    <header>
+      <h1>Vozni park</h1>
+    </header>
+    <main>
+      <section class="left">
+        <form>
+          <div class="formBox">
+            <label for="title">Registarske Tablice</label>
+            <input type="text" id="tablice" placeholder="tablice" />
+          </div>
+          <div class="formBox">
+            <label for="title">Marka Automobila</label>
+            <input type="text" id="marka" placeholder="marka" />
+          </div>
+          <div class="formBox">
+            <label for="yr">Godiste Automobila</label>
+            <input type="number" id="godiste" placeholder="godiste" />
+          </div>
+          <div class="formBox">
+            <button id="btn">Dodaj Automobil!</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="right">
+        <p class="message">Vas vozni park:</p>
+        <div id="msg">
+          <pre></pre>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
