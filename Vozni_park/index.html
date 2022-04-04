@@ -13,7 +13,7 @@
     </header>
     <main>
       <section class="left">
-        <form>
+        <form method='post'>
           <div class="formBox">
             <label for="title">Registarske Tablice</label>
             <input type="text" id="tablice" placeholder="tablice" />
@@ -27,7 +27,7 @@
             <input type="number" id="godiste" placeholder="godiste" />
           </div>
           <div class="formBox">
-            <button id="btn">Dodaj Automobil!</button>
+            <button type='submit' id="btn">Dodaj Automobil!</button>
           </div>
         </form>
       </section>
@@ -35,7 +35,9 @@
       <section class="right">
         <p class="message">Vas vozni park:</p>
         <div id="msg">
-          <ol></ol>
+          <ul style='list-style-type: none;'>
+           
+          </ul>
         </div>
       </section>
     </main>
