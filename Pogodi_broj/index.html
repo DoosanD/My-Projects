@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Čik Pogodi!</title>
+  </head>
+
+  <body>
+    <audio hidden controls autoplay>
+      <source src="cik_pogodi.ogg" type="audio/ogg" />
+    </audio>
+    <div class="levo">
+      <h1>Pogodi tajni broj!</h1>
+      <p>
+        Zamišljam broj od 1 do 20, da li možeš da pogodiš koj broj zamišljam?
+      </p>
+
+      <label for="guess">Moj pokušaj:</label>
+      <input type="number" id="guess" />
+      <input type="submit" id="submitGuess" value="Probaj" />
+    </div>
+    <div class="desno"><p id="feedback"></p></div>
+  </body>
+  <script src="script.js"></script>
+</html>
