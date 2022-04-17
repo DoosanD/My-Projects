@@ -33,7 +33,7 @@ function showArray() {
       kola[i].tablice == ""
     ) {
       alert("Unesite podatke");
-      location.reload();
+      kola.pop(park);
     }
     if (kola[i].kilometraza <= 5000 && godina - kola[i].godiste <= 9) {
       console.log("srednja", kola[i]);
@@ -42,8 +42,7 @@ function showArray() {
      ${i} ${kola[i].tablice}  ${kola[i].marka} ${kola[i].godiste} ${kola[i].kilometraza}  <button onclick="deleteItem(kola,${i});console.log(kola);">Obrisi</button>
         </li>
         `;
-    }
-    if (
+    } else if (
       // godina - kola[i].godiste > 20 ||
       (kola[i].kilometraza > 5000 && kola[i].kilometraza <= 15000) ||
       (godina - kola[i].godiste > 10 && godina - kola[i].godiste < 20)
@@ -54,8 +53,7 @@ function showArray() {
    ${i} ${kola[i].tablice}  ${kola[i].marka} ${kola[i].godiste} ${kola[i].kilometraza}  <button onclick="deleteItem(kola,${i});console.log(kola);">Obrisi</button>
       </li>
       `;
-    }
-    if (kola[i].kilometraza > 15000 || godina - kola[i].godiste > 30) {
+    } else if (kola[i].kilometraza > 15000 || godina - kola[i].godiste > 30) {
       console.log("stara", kola[i]);
       document.querySelector("#msg3 ul").innerHTML += `
       <li id=${i}>
