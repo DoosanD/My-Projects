@@ -13,10 +13,10 @@
     </header>
     <main>
       <section class="left">
-        <form method='post'>
+        <form method="post">
           <div class="formBox">
             <label for="title">Registarske Tablice</label>
-            <input type="text" id="tablice" placeholder="tablice" />
+            <input type="text" id="tablica" placeholder="tablice" />
           </div>
           <div class="formBox">
             <label for="title">Marka Automobila</label>
@@ -27,20 +27,35 @@
             <input type="number" id="godiste" placeholder="godiste" />
           </div>
           <div class="formBox">
-            <button type='submit' id="btn">Dodaj Automobil!</button>
+            <label for="km">Predjena kilometraza</label>
+            <input type="number" id="kilometraza" placeholder="kilometraza" />
+          </div>
+          <div class="formBox">
+            <button type="submit" id="btn">Dodaj Automobil!</button>
           </div>
         </form>
       </section>
 
       <section class="right">
-        <p class="message">Vas vozni park:</p>
         <div id="msg">
-          <ul style='list-style-type: none;'>
-           
-          </ul>
+          Novi!
+          <ul style="list-style-type: none"></ul>
+        </div>
+      </section>
+      <section class="right">
+        Srednje godine.
+        <div id="msg2">
+          <ul style="list-style-type: none"></ul>
+        </div>
+      </section>
+
+      <section class="right">
+        Staro..!
+        <div id="msg3">
+          <ul style="list-style-type: none"></ul>
         </div>
       </section>
     </main>
-    <script src="script.js"></script>
+    <script src="script0.js"></script>
   </body>
 </html>
