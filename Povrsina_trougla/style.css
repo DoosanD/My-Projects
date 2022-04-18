@@ -1,0 +1,30 @@
+/* From uiverse.io by @adamgiebl */
+button {
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+   }
+   
+   button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+   button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+    body{
+        width: 500px;
+        margin:auto;
+        display: auto;
+        background-image: url(https://www.creativefabrica.com/wp-content/uploads/2020/02/11/Grey-Triangle-Background-with-Opacity-Graphics-1.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+  
