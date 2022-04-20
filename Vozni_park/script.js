@@ -1,7 +1,5 @@
 var kola = [];
-var kola2 = [];
-var kola3 = [];
-var park = {};
+var godina = new Date().getFullYear();
 
 const dodajKola = (ev) => {
   ev.preventDefault();
@@ -11,17 +9,22 @@ const dodajKola = (ev) => {
     godiste: document.getElementById("godiste").value,
     kilometraza: document.getElementById("kilometraza").value,
   };
-  if (park.kilometraza < 5000) {
+  if (
+    kola.some(
+      (ev) =>
+        ev.tablice === park.tablice &&
+        ev.marka === park.marka &&
+        ev.godiste === park.godiste &&
+        ev.kilometraza === park.kilometraza
+    )
+  ) {
+    alert("Automobil sa istim informacijama vec postoji");
+    document.forms[0].reset();
+  } else {
     kola.push(park);
-  } else if (park.kilometraza >= 5000 && park.kilometraza <= 15000) {
-    kola2.push(park);
-  } else if (park.kilometraza > 15000) {
-    kola3.push(park);
+    showArray();
+    document.forms[0].reset();
   }
-
-  showArray();
-
-  document.forms[0].reset(); // izbrisi formu za sledeci unos
 };
 
 function deleteItem(niz, index) {
@@ -29,53 +32,62 @@ function deleteItem(niz, index) {
   showArray();
 }
 
+function editItem(niz, index) {
+  //kad se klikne na dugme, otvori se modal, sa 4 inputa reg tablice, godiste, ... i dugme ok
+  // u ta 4 inputa stoji to sto si dohvatio, editujes i onda ides ok
+  showArray();
+}
+
 function showArray() {
-  document.querySelector("#msg ul").innerHTML = "<li id='1'></li>";
-  document.querySelector("#msg2 ul").innerHTML = "<li id='2'></li>";
-  document.querySelector("#msg3 ul").innerHTML = "<li id='3'></li>";
+  document.querySelector("#msg ul").innerHTML = "<li id='a1'></li>";
+  document.querySelector("#msg2 ul").innerHTML = "<li id='a2'></li>";
+  document.querySelector("#msg3 ul").innerHTML = "<li id='a3'></li>";
+
   for (let i = 0; i < kola.length; i++) {
-    if (document.getElementById("kilometraza").value <= 5000) {
-      document.querySelector("#msg ul").innerHTML += `
-        <li id=${i}>
-     ${i} ${kola[i].tablice}  ${kola[i].marka} ${kola[i].godiste} ${kola[i].kilometraza}  <button onclick="deleteItem(kola,${i});console.log(kola);">Obrisi</button>
-        </li>
-        `;
-    } else if (
-      document.getElementById("kilometraza").value > 5000 &&
-      document.getElementById("kilometraza").value <= 15000
+    if (
+      kola[i].godiste == "" ||
+      kola[i].kilometraza == "" ||
+      kola[i].marka == "" ||
+      kola[i].tablice == ""
     ) {
-      document.querySelector("#msg2 ul").innerHTML += `
-      <li id=${i}>
-   ${i} ${kola[i].tablice}  ${kola[i].marka} ${kola[i].godiste} ${kola[i].kilometraza}  <button onclick="deleteItem(kola,${i});console.log(kola);">Obrisi</button>
+      alert("Unesite podatke");
+      kola.pop(park);
+    }
+
+    if (kola[i].kilometraza <= 5000 && godina - kola[i].godiste < 10) {
+      console.log("nova", kola[i]);
+      document.querySelector("#msg ul").innerHTML += `
+      <li class="text" id=${i}> 
+      🚘 RT: ${kola[i].tablice} Marka: ${kola[i].marka} God: ${kola[i].godiste} KM: ${kola[i].kilometraza}  
+      <button class="old" onclick="editItem(kola,${i});console.log(kola);">Edit</button>
+      <button class="old" onclick="deleteItem(kola,${i});console.log(kola);">X</button>
       </li>
       `;
-    } else if (document.getElementById("kilometraza").value > 15000) {
+    } else if (
+      (kola[i].kilometraza <= 15000 &&
+        godina - kola[i].godiste >= 10 &&
+        godina - kola[i].godiste < 20) ||
+      (kola[i].kilometraza <= 15000 && godina - kola[i].godiste < 10)
+    ) {
+      console.log("srednja", kola[i]);
+      document.querySelector("#msg2 ul").innerHTML += `
+      <li class="text" id=${i}> 
+      🚗 RT: ${kola[i].tablice} Marka: ${kola[i].marka} God: ${kola[i].godiste} KM: ${kola[i].kilometraza}  
+      <button class="old" onclick="editItem(kola,${i});console.log(kola);">Edit</button>
+      <button class="old" onclick="deleteItem(kola,${i});console.log(kola);">X</button>
+      </li>
+      `;
+    } else {
+      console.log("stara", kola[i]);
       document.querySelector("#msg3 ul").innerHTML += `
-      <li id=${i}>
-   ${i} ${kola[i].tablice}  ${kola[i].marka} ${kola[i].godiste} ${kola[i].kilometraza}  <button onclick="deleteItem(kola,${i});console.log(kola);">Obrisi</button>
+      <li class="text" id=${i}> 
+      🚓 RT: ${kola[i].tablice} Marka: ${kola[i].marka} God: ${kola[i].godiste} KM: ${kola[i].kilometraza}  
+      <button class="old" onclick="editItem(kola,${i});console.log(kola);">Edit</button>
+      <button class="old" onclick="deleteItem(kola,${i});console.log(kola);">X</button>
       </li>
       `;
     }
   }
 }
 
-//console.log("kola", kola);
-// }
-
 document.getElementById("btn").addEventListener("click", dodajKola);
-
-// window.onload = function () {
-//   document.querySelector("#l").onclick = function () {
-//     this.parentNode.parentNode.parentNode.removeChild(
-//       this.parentNode.parentNode
-//     );
-//     return false;
-//   };
-// };
-
-// <span
-//   id="close"
-//   onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;"
-// >
-//   x
-// </span>;
