@@ -19,3 +19,5 @@ git remote add origin (rainbow) - dodavanje putanje
 git checkout -b nazivGrane - pravljenje nove grane
 git checkout origin nazivGrane - pozicija gde se nalazimo
 git branch -d branch_name - brisanje grane
+
+Test
