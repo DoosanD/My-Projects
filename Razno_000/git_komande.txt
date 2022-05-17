@@ -20,4 +20,10 @@ git checkout -b nazivGrane - pravljenje nove grane
 git checkout origin nazivGrane - pozicija gde se nalazimo
 git branch -d branch_name - brisanje grane
 
-Test
+// css sajtovi
+
+css-tricks.com
+coolors.co
+Randomally.com
+cssreset.com
+fonts.google.com
