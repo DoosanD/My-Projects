@@ -15,7 +15,7 @@ const najduzeIme =
     imena.map((x) => x.length).indexOf(Math.max(...imena.map((x) => x.length)))
   ];
 
-// .map (mapira u boolean) .filter("filtrira u ono sto se trazi") [... , 2] = raspakuje niz
+//  .filter("filtrira u ono sto se trazi") [... , 2] = raspakuje niz
 
 let brojevi = ["3", "4", "-4"];
 let brojeviNum = brojevi.map((x) => Number(x));
