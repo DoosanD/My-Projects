@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Add two numbers</h1>
+      <div class="logo">!</div>
+      <img class="logo" src="./logo_header.svg" alt="logo" />
+    </header>
+    <main>
+      <section class="one">
+        <input type="number" id="inputOne" placeholder="First number" />
+        <input type="number" id="inputTwo" placeholder="Second number" />
+        <button class="btn" onclick="add()">ADD</button>
+      </section>
+      <section class="two">
+        <div class="result"></div>
+
+        <div class="numberClicked"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
