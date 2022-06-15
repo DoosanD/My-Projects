@@ -9,7 +9,7 @@ const add = () => {
     // To prevent empty inputs
     alert("Empty input");
   } else {
-    // If there is a input, write to HTML and call increment function
+    // If there is an input, write to HTML and call increment function
     document.querySelector(".result").innerHTML = result;
     increment();
   }
