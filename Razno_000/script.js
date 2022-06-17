@@ -27,3 +27,20 @@ console.log(brojeviParan);
 
 // nadji imena sa pocetnim slovom "A"
 let saA = imena.filter((x) => x.startsWith("A"));
+
+// Memo kesiranje za brze izvrsavanje funkcije
+
+const add = (a, b, memo) => {
+  memo = memo || {};
+  if (memo[(a, b)]) {
+    return memo[(a, b)];
+  } else {
+    return a + b;
+  }
+};
+
+console.time("doSomething");
+
+add(1, 4); // <---- The function you're measuring time for
+
+console.timeEnd("doSomething");
