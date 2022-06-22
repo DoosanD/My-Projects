@@ -1,6 +1,11 @@
-# it-prekvalifikacija
+# Projects
+
 #
+
 #
-# Beleške sa prekvalifikacije za IT sektor 2022 godine.
+
+# Notes and projects from IT Academy
+
 #
+
 #
