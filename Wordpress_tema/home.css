@@ -1,0 +1,244 @@
+section {
+	float: left;
+	width: 100%;
+}
+.page {
+	margin:0;
+}
+
+html, body {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body span{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'inter', sans-serif;
+}
+body ul, ol, body li, body p{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'inter'!important;
+}
+.post, .page {
+	margin: 0px;
+}
+body a {
+	transition: all 0.3s ease-in-out;
+}
+body h2 {
+	font-size: 35px;
+	line-height: 43px;
+	color: #062E4C;
+	font-weight: 600;
+}
+section, .site-footer, .site-info {
+	float:left;
+	width:100%;
+}
+
+/* hero */
+.hero-left h1 {
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 73px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+}
+
+.hero-left ul li {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+}
+
+.hero-left ul{
+	list-style: none;
+}
+/* hero end */
+/* service */
+.services-section {
+	padding: 0 0 110px 0;
+	background: #F2F2EF;
+}
+.service-single-holder {
+	margin-top: -118px;
+	float:left;
+	width:100%;
+	padding: 32px 20px;
+	background: #fff;
+}
+.service-single-in-bottom{
+	text-align:center;
+	background: #F2F2EF;
+	float: left;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+	padding: 25px 18px 45px;
+}
+.service-single-in h3{
+	padding-top:15px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	color: #2A2A2A;
+}
+.service-single-in p{ 
+	padding-top:15px;;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #2A2A2A;
+}
+.services-link {
+	    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.service-single-in a{
+	padding: 125px;
+	text-align: center;
+	width: 176px;
+	height: 48px;
+	left: 473px;
+	top: 1432px;
+}
+.service-single-in-bottom img{
+	margin-top: -62px;
+}
+.service-single-in-bottom a{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: white;
+	font-weight:bold;
+	padding: 15px 25px;
+	width: 176px;
+	height: 48px;
+	left: 874px;
+	top: 1432px;
+}
+.services-link {
+	float:left;
+	width:100%;
+}
+/* service end */
+/* about */
+.about-section{
+	background: #F5F5F5;
+}
+.about-single-holder{
+	float:left;
+	width:100%;
+	background: #FFF;
+	padding: 30px 20px;
+}
+.about-right > h3{
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: #2A2A2A;
+}
+.about-single-holder p{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: -0.02em;
+	color: #2A2A2A;
+
+}
+.about-single-holder a{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: black;
+	color:white;
+	font-weight:bold;
+	padding: 15px 25px;
+	width: 176px;
+	height: 48px;
+	left: 874px;
+	top: 1432px;
+}
+.about-link {
+	float:left;
+	width:100%;
+	margin-top:40px;
+}
+/* about end */
+/* how it works */
+.howItWorks{
+	padding:100px 0;
+	background: #F5F5F5;
+}
+.howItWorks h3{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	color: #FFFFFF;
+	margin-bottom: 15px;
+}
+.howItWorks p{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+}
+.how-single-left, .how-single-mid, .how-single-right{
+	background:#2A2A2A;
+	color:white;
+	padding:25px 25px 50px 25px;
+	border-top: 5px solid #FFE829;
+}
+/* how it works end */
+/* pictures */
+.pictures{
+	background: #FFFFFF;
+	padding: 15px;
+}
+/* pictures end  */
+/* footer */
+.site-footer{
+	background:#2A2A2A;
+	color:white;
+	padding: 70px 0 0 0;
+}
+.single-mid h3{
+	margin-bottom: 15px;
+}
+.md-footer-copy-right{
+	padding: 25px 0;
+	text-align:center;
+	background:#131313;
+}
+.footer-right a{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #FFE829;
+	font-weight:bold;
+	padding: 15px 25px;
+	margin-top: 20px;
+	position:absolute;
+}
+.single-right h3{
+	font-size: 23px;
+} 
+.footer-mid p{
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	letter-spacing: -0.02em;
+	color: #D3D3D3;
+}
+.footer-in {
+	float:left;
+	width:100%;
+	padding: 30px 0;
+}
+/* footer end */
