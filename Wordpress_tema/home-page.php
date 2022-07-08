@@ -13,7 +13,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<section class="hero-section home-sections" style="padding: 200px 0; background:url(/wp-content/uploads/2022/07/hero-image.jpg) no-repeat;background-size: cover;">
 			<div class="container">
-				<div class="hero-left col-lg-7">
+				<div class="hero-left col-lg-7 col-md-7">
 					<h1><?php echo $fields['hero_title']; ?></h1>
 					<ul>
 						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><?php echo $fields['hero_list_text_1']; ?></li>
@@ -21,15 +21,17 @@ get_header();
 						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><?php echo $fields['hero_list_text_3']; ?></li>
 					</ul>
 				</div>
-				<div class="hero-right col-lg-5">
+				<div class="hero-right col-lg-5 col-md-5">
 					<h3>
 						Get Your Free Estimate
+						<div class="line-top"></div>
 					</h3>
 					<?php
 					echo do_shortcode(
 						'[gravityform id="1" title="false" description="false" ajax="true"]'
 					);
 					?>
+					<div class="line-bottom"></div>
 				</div>
 			</div>
 		</section>
@@ -50,10 +52,9 @@ get_header();
 									<?php echo $fields['service_single_1_text']; ?>
 								</p>
 								<div class="services-link">
-									<a href='<?php echo $fields['service_single_1_link']; ?>'>Read More </a>
+									<a href='<?php echo $fields['service_single_1_link']; ?>'>Read More</a>
 								</div>
 							</div>
-
 						</div>
 					</div>
 					<div class="single-mid col-lg-4">
@@ -71,7 +72,7 @@ get_header();
 									<?php echo $fields['service_single_2_text']; ?>
 								</p>
 								<div class="services-link">
-									<a href='<?php echo $fields['service_single_2_link']; ?>'>Read More </a>
+									<a href='<?php echo $fields['service_single_2_link']; ?>'>Read More</a>
 								</div>
 							</div>
 						</div>
@@ -90,7 +91,7 @@ get_header();
 									<?php echo $fields['service_single_3_text']; ?>
 								</p>
 								<div class="services-link">
-									<a href='<?php echo $fields['service_single_3_link']; ?>'>Read More </a>
+									<a href='<?php echo $fields['service_single_3_link']; ?>'>Read More</a>
 								</div>
 							</div>
 						</div>
@@ -98,7 +99,6 @@ get_header();
 				</div>
 			</div>
 		</section>
-
 		<section class="about-section">
 			<div class="container">
 				<div class="about-single-holder">
@@ -113,7 +113,7 @@ get_header();
 							<?php echo $fields['about_text']; ?>
 						</p>
 						<div class="about-link">
-							<a href='<?php echo $fields['about_link']; ?>'>Read More </a>
+							<a href='<?php echo $fields['about_link']; ?>'>Read More <img src="/wp-content/uploads/2022/07/read-more-arrow-white-1.svg" alt="right arrow" /></a>
 						</div>
 					</div>
 				</div>
@@ -163,7 +163,6 @@ get_header();
 			<img class="col-lg-3" src="<?php echo $fields['pictures_4']['url']; ?>" alt="Family moving boxes" />
 		</section>
 
-
 		<!-- 	<section class="blog-section home-sections">
       <div class="container section-container">
         <div class="content-container">
@@ -186,7 +185,6 @@ get_header();
 							$excerpt = wp_trim_words($recent['post_content'], '20'); // $excerpt contains the excerpt of the concerned post
 							$cats = get_the_category($postid);
 							$date = date('F j. Y', strtotime($recent['post_date']));
-
 						?>
                     <div class="blog-post-container">
                       <div class="blog-post-image-container">
