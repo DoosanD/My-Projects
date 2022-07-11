@@ -38,7 +38,7 @@ get_header();
 		<section class="services-section home-sections">
 			<div class="container">
 				<div class="service-single-holder">
-					<div class="single-left col-lg-4">
+					<div class="single-left col-sm-4">
 						<div class="service-single-in">
 							<div class="service-single-in-top">
 								<img src="<?php echo $fields['services_single_1_img']['url']; ?>" alt="Packing and Unpacking" />
@@ -57,7 +57,7 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<div class="single-mid col-lg-4">
+					<div class="single-mid col-sm-4">
 						<div class="service-single-in">
 							<div class="service-single-in-top">
 								<img src="<?php echo $fields['service_single_2_img']['url']; ?>" alt="Packing and Unpacking" />
@@ -77,7 +77,7 @@ get_header();
 							</div>
 						</div>
 					</div>
-					<div class="single-right col-lg-4">
+					<div class="single-right col-sm-4">
 						<div class="service-single-in">
 							<div class="service-single-in-top">
 								<img src="<?php echo $fields['service_single_3_img']['url']; ?>" alt="Packing and Unpacking" />
