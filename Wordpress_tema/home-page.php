@@ -24,8 +24,8 @@ get_header();
 				<div class="hero-right col-lg-5 col-md-5">
 					<h3>
 						Get Your Free Estimate
-						<div class="line-top"></div>
 					</h3>
+					<div class="line-top"></div>
 					<?php
 					echo do_shortcode(
 						'[gravityform id="1" title="false" description="false" ajax="true"]'

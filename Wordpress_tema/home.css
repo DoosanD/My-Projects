@@ -5,7 +5,6 @@ section {
 .page {
 	margin:0;
 }
-
 html, body {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -38,6 +37,7 @@ section, .site-footer, .site-info {
 }
 
 /* hero */
+
 .hero-left{
 	right:100px;
 }
@@ -49,13 +49,45 @@ section, .site-footer, .site-info {
 	letter-spacing: -0.02em;
 	color: #FFFFFF;
 }
-/* max-width 1350? and clamp in .hero-left h1 */
+.hero-left ul,.hero-left img{
+	list-style: none;
+	padding:10px;
+}
+.hero-right{
+	background-color:#FFE829;
+}
+.hero-right h3{ 
+	text-align:center;
+	font-weight: 700;
+	font-size: 34px;
+	line-height: 41px;
+	color: #2A2A2A;
+	padding: 20px 20px 0px 20px;
+}
+.line-top{
+	border-bottom: 1px solid #000; 
+	line-height: 0.1em;
+	margin: 10px -15px 20px;
+	width: 475px;
+}
+.line-bottom{
+	border-bottom: 1px solid #000; 
+	line-height: 0.1em;
+	margin:24px -15px 52px;
+	width: 475px;
+}
 @media all and (max-width: 1350px){
 	.hero-left {
 		left:1px;
 	}
 }
 @media all and (max-width: 1199px){
+	.line-bottom{
+		width:392px;
+	}
+	.line-top{
+		width:392px;
+	}
 	.hero-left h1{
 		font-size:41px;
 	}
@@ -74,41 +106,18 @@ section, .site-footer, .site-info {
 	letter-spacing: -0.02em;
 	color: #FFFFFF;
 }
-
-.hero-left ul,.hero-left img{
-	list-style: none;
-	padding:10px;
-}
-.hero-right{
-/* 	right: -84px; */
-	background-color:#FFE829;
-}
-.hero-right h3{ 
-	text-align:center;
-	font-weight: 700;
-	font-size: 34px;
-	line-height: 41px;
-	color: #2A2A2A;
-	padding: 20px 20px 0px 20px;
-}
-.line-top{
-	border-bottom: 1px solid #000; 
-	line-height: 0.1em;
-	margin: 10px -35px 20px;
-	width: 475px;
-}
-.line-bottom{
-	border-bottom: 1px solid #000; 
-	line-height: 0.1em;
-	margin:24px -15px 52px;
-	width: 475px;
-}
-@media all and (max-width: 1199px){
-	.line-bottom{
-		width:392px;
+@media all and (max-width: 576px){
+	.hero-left h1{
+		font-size:23px;
 	}
-	.line-top{
-		width:392px;
+	.hero-left ul li{
+		font-size: 15px;
+	}
+	.hero-section{
+		padding: 85px 0;
+	}
+	.hero-left{
+		margin:-79px 0 0 0;
 	}
 }
 /* hero end */
@@ -191,8 +200,14 @@ section, .site-footer, .site-info {
 }
 }
 @media all and (max-width: 991px){
+	.hero-right{
+		padding:1px;
+	}
+	.hero-right h3{
+		font-size: 21px;
+	}
 	.line-top{
-		width:111%;
+		width:104.6%;
 	}
 	.line-bottom{
 		width:104.5%;
@@ -200,6 +215,17 @@ section, .site-footer, .site-info {
 	#input_1_9{
 	background-position: 612px 11px;
 }
+}
+@media all and (max-width: 576px){
+	.line-top{
+		width:108.6%;
+	}
+	.line-bottom{
+		width:108.5%;
+	}
+	#input_1_9{
+		background-position:273px 11px;
+	}
 }
 .gf_progressbar_percentage, .gf_progressbar_title, .gform_previous_button{
 	display: none;
@@ -219,7 +245,7 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 1199px){
 	.service-single-in-top img{
-/* 		margin: 0 0 0 242px; */
+		padding-top:30px;
 	}
 }
 .service-single-in-bottom{
@@ -230,7 +256,7 @@ section, .site-footer, .site-info {
     z-index: 999;
     position: relative;
 	padding: 25px 18px 45px;
-	max-height: 355px;
+/* 	max-height: 355px; */
 }
 .service-single-in h3{
 	padding-top:15px;
@@ -273,7 +299,6 @@ section, .site-footer, .site-info {
 	background-color:#3F3F3F;
 	background-image: url('/wp-content/uploads/2022/07/read-more-arrow-white-1.svg');
 	background-repeat: no-repeat;
-	background-position: 135px 17px;
 }
 .service-single-in-bottom img{
 	margin-top: -62px;
@@ -292,10 +317,21 @@ section, .site-footer, .site-info {
 	.service-single-in-bottom a{
 	font-size: 12px;
 	}
+	.service-single-in a{
+		background-position:126px 15px;
+	}
+	.service-single-in p{
+		font-size:13px;
+	}
 }
 .services-link {
 	float:left;
 	width:100%;
+}
+@media all and (max-width: 576px){
+	.service-single-in h3{
+		font-size:20px;
+	}
 }
 /* service end */
 /* about */
@@ -362,6 +398,12 @@ section, .site-footer, .site-info {
 .about-link img{
 	margin: 0 0 0 10px;
 }
+@media all and (max-width: 1199px){
+	.about-right h3{
+		font-size: 25px;
+		margin-top:20px;
+	}
+}
 /* about end */
 /* how it works */
 .howItWorks{
@@ -390,6 +432,16 @@ section, .site-footer, .site-info {
 	padding:25px 25px 50px 25px;
 	border-top: 5px solid #FFE829;
 }
+@media all and (max-width: 1199px){
+	.how-single-holder{
+		padding-bottom: 20px;
+	}
+}
+@media all and (max-width: 576px){
+	.howItWorks h3{
+		font-size:20px;
+	}
+}
 /* how it works end */
 /* pictures */
 .pictures{
@@ -398,7 +450,7 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 1199px){
 	.pictures img{
-/* 		margin: 0 0 0 195px; */
+		padding:10px 0px 10px 10px;
 	}
 }
 /* pictures end  */
