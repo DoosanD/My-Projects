@@ -37,6 +37,12 @@ section, .site-footer, .site-info {
 }
 
 /* hero */
+.hero-section{
+	padding:150px 0 200px 0;
+	background: url(/wp-content/uploads/2022/07/hero-image.jpg) no-repeat;
+	background-size: auto;
+	background-size: cover;
+}
 
 .hero-left{
 	right:100px;
@@ -80,8 +86,14 @@ section, .site-footer, .site-info {
 	.hero-left {
 		left:1px;
 	}
+	.hero-section{
+		padding: 140px 0 200px 0;
+	}
 }
 @media all and (max-width: 1199px){
+	.hero-section{
+		padding: 100px 0 165px 0;
+	}
 	.line-bottom{
 		width:392px;
 	}
@@ -90,6 +102,7 @@ section, .site-footer, .site-info {
 	}
 	.hero-left h1{
 		font-size:41px;
+		line-height: 60px;
 	}
 	.hero-left{
 		position:relative;
@@ -108,16 +121,24 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 576px){
 	.hero-left h1{
-		font-size:23px;
+		font-weight: 700;
+		font-size: 34px;
+		line-height: 46px;
+		/* or 135% */
+		letter-spacing: -0.02em;
 	}
 	.hero-left ul li{
-		font-size: 15px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		/* identical to box height */
+		letter-spacing: -0.02em;
+	}
+	.hero-left ul, .hero-left img{
+		padding: 4px;
 	}
 	.hero-section{
-		padding: 85px 0;
-	}
-	.hero-left{
-		margin:-79px 0 0 0;
+		padding: 65px 0 150px 0;
 	}
 }
 /* hero end */
@@ -202,6 +223,12 @@ section, .site-footer, .site-info {
 @media all and (max-width: 991px){
 	.hero-right{
 		padding:1px;
+		position:relative;
+		top: -160px;
+	}
+	.hero-left ul{
+		position:relative;
+		bottom:-430px;
 	}
 	.hero-right h3{
 		font-size: 21px;
@@ -214,9 +241,19 @@ section, .site-footer, .site-info {
 	}
 	#input_1_9{
 	background-position: 612px 11px;
-}
+	}
+	
 }
 @media all and (max-width: 576px){
+	.hero-right{
+		padding:1px;
+		position:relative;
+		top: -130px;
+	}
+	.hero-left ul{
+		position:relative;
+		bottom:-410px;
+	}
 	.line-top{
 		width:108.6%;
 	}
@@ -323,6 +360,7 @@ section, .site-footer, .site-info {
 	.service-single-in p{
 		font-size:13px;
 	}
+	
 }
 .services-link {
 	float:left;
@@ -400,8 +438,11 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 1199px){
 	.about-right h3{
-		font-size: 25px;
+		font-size: 29px;
 		margin-top:20px;
+	}
+	.about-link{
+		padding-bottom:35px;
 	}
 }
 /* about end */
@@ -409,6 +450,17 @@ section, .site-footer, .site-info {
 .howItWorks{
 	padding:100px 0;
 	background: #F5F5F5;
+}
+.how-it-works-title{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	color: black;
+	text-align: center;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
 }
 .howItWorks h3{
 	font-family: 'Inter';

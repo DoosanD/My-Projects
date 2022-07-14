@@ -11,7 +11,7 @@ get_header();
 
 <main id="main" class="site-main">
 	<div id="primary" class="content-area">
-		<section class="hero-section home-sections" style="padding: 200px 0; background:url(/wp-content/uploads/2022/07/hero-image.jpg) no-repeat;background-size: cover;">
+		<section class="hero-section home-sections">
 			<div class="container">
 				<div class="hero-left col-lg-7 col-md-7">
 					<h1><?php echo $fields['hero_title']; ?></h1>
@@ -121,6 +121,9 @@ get_header();
 		</section>
 		<section class="howItWorks">
 			<div class="container">
+				<h4 class="how-it-works-title">
+					How it Works
+				</h4>
 				<div class="how-single-holder col-lg-4">
 					<div class="how-single-left ">
 						<img src="<?php echo $fields['how_it_works_number']['url']; ?>" alt="People with boxes" />
