@@ -151,8 +151,8 @@
       z-index: 2;
     }
     .site-branding img {
-	  max-width: 200px;
-	  padding: 5px;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
     }
     .navbar-header {
       position: absolute;
@@ -168,6 +168,8 @@
     }
 	 .mobile-estimate{
 		display:flex;
+		font-size: 17px;
+		line-height: 21px;
 	}
     #site-navigation .navbar-header button:hover, #site-navigation .navbar-header button:focus, #site-navigation .navbar-header button:active {
       background-color: unset;
@@ -286,6 +288,49 @@
 		background-position: 276px 17px;
 	} 
 }
+@media screen and (max-width: 576px){
+	 .mobile-estimate{
+		padding: 13px 104px 15px;
+		background-position: 232px 17px;
+		position: relative;
+		margin: -15px 0px 0px -15px;
+		width: 200%;
+	}
+	 .hero-left ul li{
+		width:101%;
+	}
+}
+@media screen and (max-width: 438px){
+	.hero-right{
+		top: -140px;
+	}
+	 .hero-left ul li{
+		width:100%;
+	}
+}
+@media screen and (max-width: 434px){
+	 .hero-right{
+		top: -210px;
+		padding: 1px;
+	}
+	 .hero-left ul li{
+		font-size:18px;
+	}
+/* 	 .hero-left ul,.hero-left img{
+		padding:0;
+} */
+	#gform_next_button_1_10{
+		margin: 0px 0 0 6px;
+		width: 264px;
+		height: 56px;
+		background-position: 210px;
+	}
+}
+@media screen and (max-width: 405px){
+	 .hero-left ul {
+        bottom: -450px;
+	}
+}
 #primary-menu > #menu-item-133 a:hover{
 	background-color: #F0CC0F;
 }
@@ -321,7 +366,8 @@
 	background-color:#F0CC0F;
 }
 .single-right h3{
-	font-size: 23px;
+	font-size: 24px;
+	line-height: 33px;
 } 
 .footer-mid p{
 	font-weight: 300;
@@ -345,6 +391,10 @@
 	}
 	.footer-mid p{
 		font-size: 16px;
+	}
+	.footer-mid h3{
+		font-size: 20px;
+		line-height: 24px;
 	}
 	.footer-right h3{
 		margin: 30px 0 25px 0px;

@@ -13,15 +13,21 @@ get_header();
 	<div id="primary" class="content-area">
 		<section class="hero-section home-sections">
 			<div class="container">
-				<div class="hero-left col-lg-7 col-md-7">
+				<div id="left-pad" class="hero-left left-padding col-lg-7 col-md-7">
 					<h1><?php echo $fields['hero_title']; ?></h1>
 					<ul>
-						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><?php echo $fields['hero_list_text_1']; ?></li>
-						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><?php echo $fields['hero_list_text_2']; ?></li>
-						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><?php echo $fields['hero_list_text_3']; ?></li>
+						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
+							<div><?php echo $fields['hero_list_text_1']; ?></div>
+						</li>
+						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
+							<div><?php echo $fields['hero_list_text_2']; ?></div>
+						</li>
+						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
+							<div><?php echo $fields['hero_list_text_3']; ?></div>
+						</li>
 					</ul>
 				</div>
-				<div class="hero-right col-lg-5 col-md-5">
+				<div class="hero-right right-pad col-lg-5 col-md-5">
 					<h3>
 						Get Your Free Estimate
 					</h3>
