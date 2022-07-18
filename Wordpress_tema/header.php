@@ -27,10 +27,11 @@
     <div id="page" class="site">
         <header id="masthead" class="site-header">
             <div class="container section-container">
+                <div class="before-header">
+                    <a href="https://testcrosscountrymovers.moverdev.com/free-estimate/">Free Estimate<img src="/wp-content/uploads/2022/07/read-more-arrow-1.svg" alt="check mark" /></a>
+                </div>
                 <div class="header-content">
-                    <div>
-                        <a class="mobile-estimate" href="https://testcrosscountrymovers.moverdev.com/free-estimate/">Free Estimate</a>
-                    </div>
+
                     <div class="site-branding">
                         <?php the_custom_logo(); ?>
                     </div><!-- .site-branding -->

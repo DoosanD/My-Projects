@@ -28,16 +28,17 @@ get_header();
 					</ul>
 				</div>
 				<div class="hero-right right-pad col-lg-5 col-md-5">
-					<h3>
-						Get Your Free Estimate
-					</h3>
-					<div class="line-top"></div>
-					<?php
-					echo do_shortcode(
-						'[gravityform id="1" title="false" description="false" ajax="true"]'
-					);
-					?>
-					<div class="line-bottom"></div>
+					<div class="hero-form">
+						<h3>
+							Get Your Free Estimate
+						</h3>
+						<?php
+						echo do_shortcode(
+							'[gravityform id="1" title="false" description="false" ajax="true"]'
+						);
+						?>
+						<div class="line-bottom"></div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -166,10 +167,10 @@ get_header();
 			</div>
 		</section>
 		<section class="pictures">
-			<img class="col-lg-3" src="<?php echo $fields['pictures_1']['url']; ?>" alt="Boxes" />
-			<img class="col-lg-3" src="<?php echo $fields['pictures_2']['url']; ?>" alt="Happy couple drinking coffee near boxes" />
-			<img class="col-lg-3" src="<?php echo $fields['pictures_3']['url']; ?>" alt="Moving truck" />
-			<img class="col-lg-3" src="<?php echo $fields['pictures_4']['url']; ?>" alt="Family moving boxes" />
+			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_1']['url']; ?>" alt="Boxes" />
+			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_2']['url']; ?>" alt="Happy couple drinking coffee near boxes" />
+			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_3']['url']; ?>" alt="Moving truck" />
+			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_4']['url']; ?>" alt="Family moving boxes" />
 		</section>
 
 		<!-- 	<section class="blog-section home-sections">

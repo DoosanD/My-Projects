@@ -124,14 +124,17 @@
 			top: 50px;
 			left: 90%;
 		}
+		.before-header {
+			display:none;
+		}
 	} 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 991px) {
     .site-header {
       position: relative;
       -webkit-box-shadow: 8px 12px 21px 0px rgba(0, 1, 1, 0.08);
               box-shadow: 8px 12px 21px 0px rgba(0, 1, 1, 0.08); 
     }
-    .site-header::before {
+/*     .site-header::before {
       content: '';
       position: absolute;
       top: 0;
@@ -141,30 +144,29 @@
       background-image: -webkit-gradient(linear, left top, left bottom, from(#ebebeb), to(#fff));
       background-image: -o-linear-gradient(#ebebeb, #fff);
       background-image: linear-gradient(#ebebeb, #fff);
-    }
+    } */
     .header-content {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       position: relative;
+		padding:0;
     }
     .site-branding {
       z-index: 2;
     }
     .site-branding img {
-	  padding-top: 10px;
-	  padding-bottom: 10px;
+	  padding:10px 0 10px 10px;
     }
     .navbar-header {
       position: absolute;
-      top: 17.5px;
-      right: -11px;
+    top: 23.5px;
+    right: 6px;
     }
     #site-navigation .navbar-header button {
       background-color: unset;
       border: unset;
       border-radius: unset;
       margin: 0;
-	  display:none;
     }
 	 .mobile-estimate{
 		display:flex;
@@ -206,7 +208,7 @@
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 45px 0 35px 1px;
+      padding: 20px 0 10px 10px;
     }
     #primary-menu > li.menu-item {
       margin: 0 0 11px 0;
@@ -244,12 +246,41 @@
       background-color: #f4f4f4;
       margin-left: 10px;
     }
+	  .site-header .container {
+		  padding:0;
+		  margin:0;
+		  width:100%;
+	  }
+	  .before-header {
+		float:left;
+		  width:100%;
+	  }
+	  .before-header a {
+		  text-align:center;
+		  float:left;
+		  width:100%;
+    background-color: #FFE829;
+    font-weight: bold;
+    padding: 15px 40px 15px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #2A2A2A;
+	  }
+	  .before-header a  img {
+		  margin-left:5px;
+	  }
+	  li#menu-item-133 {
+		  display:none;
+	  }
   }
-  
   @media screen and (max-width: 400px) {
     .navbar-header {
       top: 14px;
     }
+	  .site-branding img {
+		width:200px;
+	  }
   }
 
 #primary-menu .menu-item a{
@@ -294,7 +325,6 @@
 		background-position: 232px 17px;
 		position: relative;
 		margin: -15px 0px 0px -15px;
-		width: 200%;
 	}
 	 .hero-left ul li{
 		width:101%;
