@@ -13,7 +13,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<section class="hero-section home-sections">
 			<div class="container">
-				<div id="left-pad" class="hero-left left-padding col-lg-7 col-md-7">
+				<div id="left-pad" class="hero-left left-padding col-lg-8 col-md-7">
 					<h1><?php echo $fields['hero_title']; ?></h1>
 					<ul>
 						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
@@ -27,7 +27,7 @@ get_header();
 						</li>
 					</ul>
 				</div>
-				<div class="hero-right right-pad col-lg-5 col-md-5">
+				<div class="hero-right right-pad col-lg-4 col-md-5">
 					<div class="hero-form">
 						<h3>
 							Get Your Free Estimate
