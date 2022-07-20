@@ -17,7 +17,7 @@ $fields = get_fields('option');
 		<div class="container">
 			<div class="footer-in">
 				<div class="footer-left col-lg-3">
-					<div class="single-left">
+					<div class="single-left-footer">
 						<img src="<?php echo $fields['footer__badge']['url']; ?>" alt="logo" />
 					</div>
 				</div>

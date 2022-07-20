@@ -176,7 +176,7 @@ section, .site-footer, .site-info {
 		margin: 0 0 -10px -11px;
 	} */
 	.hero-section{
-		padding: 40px 0 150px 0;
+		padding: 55px 0 150px 0;
 	}
 	.hero-left  {
 		padding:0;
@@ -335,7 +335,7 @@ section, .site-footer, .site-info {
 /* form end */
 /* service */
 .services-section {
-	padding: 0 0 110px 0;
+	padding: 0 0 140px 0;
 	background: #F2F2EF;
 }
 .service-single-holder {
@@ -440,8 +440,11 @@ section, .site-footer, .site-info {
 		background-position:138px 15px;
 	}
 	.service-single-holder{
-		margin-top: 0;
-		padding: 0;
+		margin-top: 15px;
+		padding: 0 0 15px 0;
+	}
+	.services-section {
+		padding: 0 0 30px 0;
 	}
 }
 @media all and (max-width: 576px){
@@ -450,14 +453,14 @@ section, .site-footer, .site-info {
 		line-height: 31px;
 	}
 	.service-single-in-top img {
-  		padding-top: 20px;
+  		padding-top: 0px;
 	}
 	.service-single-holder {
 		padding:0;
 	}
 	
 	.service-single-holder .single-left, .service-single-holder .single-mid,.service-single-holder .single-right {
-		padding:10px;
+		padding:15px;
 		float:left;
 		width:100%;
 	}
@@ -531,7 +534,7 @@ section, .site-footer, .site-info {
 		width:110%;
 	}
 	.about-link{
-		padding-bottom:35px;
+		padding-bottom:70px;
 	}
 }
 @media all and (max-width: 767px){
@@ -548,7 +551,7 @@ section, .site-footer, .site-info {
 /* about end */
 /* how it works */
 .howItWorks{
-	padding:100px 0;
+	padding:120px 0;
 	background: #F5F5F5;
 }
 .how-it-works-title{
@@ -577,12 +580,16 @@ section, .site-footer, .site-info {
 	line-height: 28px;
 	letter-spacing: -0.02em;
 	color: #FFFFFF;
+	padding-bottom: 20px;
 }
 .how-single-left, .how-single-mid, .how-single-right{
 	background:#2A2A2A;
 	color:white;
 	padding:25px 25px 50px 25px;
 	border-top: 5px solid #FFE829;
+}
+.how-single-holder img{
+	padding-bottom:20px;
 }
 @media all and (max-width: 1199px){
 	.how-single-holder{
@@ -599,6 +606,9 @@ section, .site-footer, .site-info {
 		padding-left:0;
 		padding-right:0;
 	}
+	.howItWorks{
+		padding:70px 0;
+	}
 }
 /* how it works end */
 /* pictures */
@@ -614,8 +624,11 @@ section, .site-footer, .site-info {
 		padding: 0 0px 0px 0px;
 	}
 	.pictures img{
-		padding:0px 20px 20px 20px;
+		padding:0px 15px 15px 15px;
 	}
+/* 	.pictures img:nth-child(even){
+		padding-left: 0;
+	} */
 }
 @media all and (max-width: 576px){ 
 	.pictures img {
