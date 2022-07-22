@@ -293,6 +293,9 @@
 	letter-spacing: 0.02em;
 	color: #2A2A2A;
 }
+#primary-menu .menu-item:not(:last-child){
+	text-transform: uppercase;
+}
 
 #primary-menu .menu-item a:visited{
 	color:gray;
@@ -405,8 +408,10 @@
 	background-color:#F0CC0F;
 }
 .single-right h3{
-	font-size: 25px;
+	font-weight: 700;
+	font-size: 22px;
 	line-height: 33px;
+	color: #FFFFFF;
 } 
 .footer-mid p{
 	font-weight: 300;
@@ -416,6 +421,7 @@
 	color: #D3D3D3;
 }
 .footer-mid h3{
+	font-size:20px;
 	margin-bottom:20px;
 	margin-top:20px;
 }
