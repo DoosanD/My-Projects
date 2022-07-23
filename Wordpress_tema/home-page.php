@@ -78,7 +78,7 @@ get_header();
 								<p>
 									<?php echo $fields['service_single_2_text']; ?>
 								</p>
-								<div class="services-link">
+								<div class="services-link-middle">
 									<a href='<?php echo $fields['service_single_2_link']; ?>'>Read More</a>
 								</div>
 							</div>
@@ -97,7 +97,7 @@ get_header();
 								<p>
 									<?php echo $fields['service_single_3_text']; ?>
 								</p>
-								<div class="services-link">
+								<div class="services-link-right">
 									<a href='<?php echo $fields['service_single_3_link']; ?>'>Read More</a>
 								</div>
 							</div>

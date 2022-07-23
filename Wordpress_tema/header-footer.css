@@ -430,6 +430,9 @@
 	width:100%;
 	padding: 50px 0 100px 0;
 }
+.md-footer-copy-right a{
+	color:#FFE829;
+}
 @media screen and (max-width: 3840px) and (min-width: 1199px) {
 	.footer-left{
 		margin-top: 18px;

@@ -122,8 +122,9 @@ section, .site-footer, .site-info {
 		width:363px;
 	}
 	.hero-left h1{
-		font-size: 35px;
+		font-size: 45px;
 		line-height: 46px;
+		padding-bottom: 15px;
 	}
 	.hero-left ul li div{
 		font-size:18px;
@@ -151,7 +152,8 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 991px){
 	.hero-left h1 {
-		margin: -10px 0px 0px 13px;;
+		margin: -10px 0px 0px 13px;
+		font-size: 46px;
 	}
 	.hero-section {
   		padding: 40px 0 200px 0;
@@ -168,8 +170,8 @@ section, .site-footer, .site-info {
 @media all and (max-width: 576px){
 	.hero-left h1{
 		font-weight: 700;
-		font-size: 28px;
-		line-height: 46px;
+		font-size: 34px;
+		line-height: 40px;
 		/* or 135% */
 		letter-spacing: -0.02em;
 	}
@@ -360,7 +362,6 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 1199px){
 	.service-single-in-top img{
-		padding-top:30px;
 		width:100%;
 	}
 }
@@ -431,7 +432,8 @@ section, .site-footer, .site-info {
 }
 @media all and (max-width: 991px){
 	.service-single-in-bottom a{
-	font-size: 9px;
+		font-size: 16px;
+		padding: 12px 45px 15px 25px;
 	}
 	.service-single-in a{
 		background-position:110px 12px;
@@ -451,21 +453,39 @@ section, .site-footer, .site-info {
 	float:left;
 	width:100%;
 }
+.services-link-middle{
+	margin: 33px 0 0 0;
+}
+.services-link-right{
+	margin: 31px 0px 0px 0px;
+}
+.about-single-holder .single-left img{
+	width: 100%;
+}
 @media screen and (max-width: 1199px) and (min-width: 991px){
 	.single-mid .service-single-in-bottom{
 /* 		padding-bottom: 76px; */
 /* 		float: inline-end;
 		margin: 17px 17px 17px 0px; */
 	}
-	.service-single-in-bottom div{
-		margin:-63px 0px 0px 0px;
+	.services-link-middle{
+		margin:63px 0px 0px 0px;
+	}
+	.services-link-right{
+		margin:63px 0px 0px 0px;
+	}
+	
+}
+@media all and (max-width: 991px){
+	.services-link-middle {
+  		margin: 63px 0 0 0;
 	}
 }
 @media all and (max-width: 767px){
 	 .service-single-in a{
 		font-size: 16px;
 		line-height: 19px;
-		background-position:138px 15px;
+		background-position:113px 13px;
 	}
 	.service-single-holder{
 		margin-top: 15px;
@@ -564,7 +584,7 @@ section, .site-footer, .site-info {
 		width:110%;
 	}
 	.about-link{
-		padding-bottom:70px;
+		padding-bottom:20px;
 	}
 }
 @media all and (max-width: 767px){
@@ -577,6 +597,9 @@ section, .site-footer, .site-info {
 	.about-single-holder .single-left{
 		padding:0;
 	}
+	.about-single-holder .single-left img{
+	padding:0px 15px 0 15px;
+}
 }
 /* about end */
 /* how it works */
@@ -654,7 +677,7 @@ section, .site-footer, .site-info {
 		padding: 0 0px 0px 0px;
 	}
 	.pictures img{
-		padding:0px 15px 15px 15px;
+		padding:10px 15px 10px 15px;
 	}
 /* 	.pictures img:nth-child(even){
 		padding-left: 0;
