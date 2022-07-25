@@ -360,19 +360,6 @@
 	}
 
 }
-@media screen and (max-width: 405px){
-	 .hero-left ul {
-        bottom: -416px;
-	}
-}
-/* @media screen and (max-width: 369px){
-	 #gform_next_button_1_10{
-		margin: 0px 0 0 6px;
-		width: 264px;
-		height: 56px;
-		background-position: 210px;
-	}
-} */
 #primary-menu > #menu-item-133 a:hover{
 	background-color: #F0CC0F;
 }
