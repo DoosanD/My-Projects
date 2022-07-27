@@ -15,16 +15,18 @@ get_header();
 			<div class="container">
 				<div id="left-pad" class="hero-left left-padding col-lg-8 col-md-7">
 					<h1><?php echo $fields['hero_title']; ?></h1>
-					<ul>
-						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
-							<div><?php echo $fields['hero_list_text_1']; ?></div>
-						</li>
-						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
-							<div><?php echo $fields['hero_list_text_2']; ?></div>
-						</li>
-						<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
-							<div><?php echo $fields['hero_list_text_3']; ?></div>
-						</li>
+					<ul> <?php for ($i = 1; $i <= 3; $i++) {  ?>
+							<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" />
+								<div><?php echo $fields['hero_list_text_' . $i]; ?></div>
+							</li>
+
+						<?php 	} ?>
+						<!-- 		<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><? php // echo $fields['hero_list_text_1']; 
+																													?></div></li>
+			<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><? php // echo $fields['hero_list_text_2']; 
+																							?></div></li>
+			<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><? php // echo $fields['hero_list_text_3']; 
+																							?></div></li> -->
 					</ul>
 				</div>
 				<div class="hero-right right-pad col-lg-4 col-md-5">
@@ -50,6 +52,10 @@ get_header();
 							<div class="service-single-in-top">
 								<img src="<?php echo $fields['services_single_1_img']['url']; ?>" alt="Packing and Unpacking" />
 							</div>
+							<!-- 						 <?php for ($i = 1; $i <= 3; $i++) {  ?>
+	<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><?php echo $fields['services_single_' . $i]; ?></div></li>
+		// php repeater 
+	<?php } ?> -->
 							<div class="service-single-in-bottom">
 								<img src="<?php echo $fields['services_box_img']['url']; ?>" alt="Box" />
 								<h3>

@@ -243,7 +243,7 @@ section, .site-footer, .site-info {
 #input_1_9{
 	background-image: url('/wp-content/uploads/2022/07/calendar-1.svg');
 	background-repeat: no-repeat;
-	background-position: 275px 17px;
+	background-position: 96%;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 22px;
@@ -255,10 +255,15 @@ section, .site-footer, .site-info {
 	color:white;
 	border: none;
 	font-family: inherit;
-	margin: -26px 0px 0px 26px;
-	width: 85%;
-	height: 60px;
+	margin: -18px 0px 0px 26px;
+	width: 86%;
+	height: 46px;
 	font-size: 22px;
+	background-image: url('/wp-content/uploads/2022/07/arrow-yellow-1.svg');
+	background-repeat: no-repeat;
+	background-position: 96%;
+	text-align: left;
+	padding-left: 30px;
 }
 #gform_fields_1_2{
 	padding: 0px 15px 10px 15px;
@@ -378,6 +383,12 @@ section, .site-footer, .site-info {
 }
 .gf_progressbar_percentage, .gf_progressbar_title, .gform_previous_button{
 	display: none;
+}
+#validation_message_1_9{
+		margin: 0 0 -60px 0px;
+}
+#gform_1_validation_container{
+		margin-top: -70px;
 }
 /* form end */
 /* service */

@@ -300,7 +300,9 @@
 #primary-menu .menu-item a:visited{
 	color:gray;
 }
-
+#primary-menu .menu-item a:link{
+	color:gray;
+}
 #primary-menu .menu-item a:hover {
     color: black;
 }
@@ -310,11 +312,12 @@
 	background-repeat: no-repeat;
 	background-color: #FFE829;
 	font-weight:bold;
-	padding: 15px 40px 15px;
+	padding: 15px 40px 15px 30px;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 21px;
 	color: #2A2A2A;
+	background-position:154px;
 }
 @media screen and (max-width: 992px) {
 	#primary-menu > #menu-item-133 a {
