@@ -114,6 +114,7 @@ section, .site-footer, .site-info {
 	letter-spacing: -0.02em;
 	color: #FFFFFF;
 	padding-bottom: 20px;
+	width: 100%;
 }
 .hero-section {
   	padding: 100px 0 200px 0;
@@ -415,7 +416,7 @@ section, .site-footer, .site-info {
     width: 100%;
     z-index: 999;
     position: relative;
-	padding: 25px 18px 45px;
+	padding: 25px 10px 45px;
 /* 	max-height: 355px; */
 }
 .service-single-in h3, .service-single-in .service-single-in-bottom h3{

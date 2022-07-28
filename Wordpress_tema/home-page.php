@@ -52,10 +52,6 @@ get_header();
 							<div class="service-single-in-top">
 								<img src="<?php echo $fields['services_single_1_img']['url']; ?>" alt="Packing and Unpacking" />
 							</div>
-							<!-- 						 <?php for ($i = 1; $i <= 3; $i++) {  ?>
-	<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><?php echo $fields['services_single_' . $i]; ?></div></li>
-		// php repeater 
-	<?php } ?> -->
 							<div class="service-single-in-bottom">
 								<img src="<?php echo $fields['services_box_img']['url']; ?>" alt="Box" />
 								<h3>
@@ -65,7 +61,7 @@ get_header();
 									<?php echo $fields['service_single_1_text']; ?>
 								</p>
 								<div class="services-link">
-									<a href='<?php echo $fields['service_single_1_link']; ?>'>Read More</a>
+									<a href='<?php echo $fields['service_single_1_link']; ?>'>Learn more</a>
 								</div>
 							</div>
 						</div>
@@ -85,7 +81,7 @@ get_header();
 									<?php echo $fields['service_single_2_text']; ?>
 								</p>
 								<div class="services-link-middle">
-									<a href='<?php echo $fields['service_single_2_link']; ?>'>Read More</a>
+									<a href='<?php echo $fields['service_single_2_link']; ?>'>Learn more</a>
 								</div>
 							</div>
 						</div>
@@ -104,7 +100,7 @@ get_header();
 									<?php echo $fields['service_single_3_text']; ?>
 								</p>
 								<div class="services-link-right">
-									<a href='<?php echo $fields['service_single_3_link']; ?>'>Read More</a>
+									<a href='<?php echo $fields['service_single_3_link']; ?>'>Learn more</a>
 								</div>
 							</div>
 						</div>
@@ -126,7 +122,7 @@ get_header();
 							<?php echo $fields['about_text']; ?>
 						</p>
 						<div class="about-link">
-							<a href='<?php echo $fields['about_link']; ?>'>Read More <img src="/wp-content/uploads/2022/07/read-more-arrow-white-1.svg" alt="right arrow" /></a>
+							<a href='<?php echo $fields['about_link']; ?>'>Learn more <img src="/wp-content/uploads/2022/07/read-more-arrow-white-1.svg" alt="right arrow" /></a>
 						</div>
 					</div>
 				</div>

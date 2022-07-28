@@ -36,7 +36,7 @@ $fields = get_fields('option');
 						<h3>
 							<?php echo $fields['footer_title_2']; ?>
 						</h3>
-						<a href='<?php echo $fields['footer_link']; ?>'>Free Estimate <img src="/wp-content/uploads/2022/07/read-more-arrow-1.svg" alt="right arrow" /></a>
+						<a href='<?php echo $fields['footer_link']; ?>'>Get a quote <img src="/wp-content/uploads/2022/07/read-more-arrow-1.svg" alt="right arrow" /></a>
 					</div>
 				</div>
 			</div>
