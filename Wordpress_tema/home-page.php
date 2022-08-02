@@ -47,64 +47,132 @@ get_header();
 		<section class="services-section home-sections">
 			<div class="container">
 				<div class="service-single-holder">
-					<div class="single-left col-sm-4">
-						<div class="service-single-in">
-							<div class="service-single-in-top">
-								<img src="<?php echo $fields['services_single_1_img']['url']; ?>" alt="Packing and Unpacking" />
-							</div>
-							<div class="service-single-in-bottom">
-								<img src="<?php echo $fields['services_box_img']['url']; ?>" alt="Box" />
-								<h3>
-									<?php echo $fields['service_single_1_title']; ?>
-								</h3>
-								<p>
-									<?php echo $fields['service_single_1_text']; ?>
-								</p>
-								<div class="services-link">
-									<a href='<?php echo $fields['service_single_1_link']; ?>'>Learn more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="single-mid col-sm-4">
-						<div class="service-single-in">
-							<div class="service-single-in-top">
-								<img src="<?php echo $fields['service_single_2_img']['url']; ?>" alt="Packing and Unpacking" />
-							</div>
-							<div class="service-single-in-bottom">
+					<?php for ($i = 1; $i <= 4; $i++) { ?>
 
-								<img src="<?php echo $fields['service_car_img']['url']; ?>" alt="Box" />
-								<h3>
-									<?php echo $fields['service_single_2_title']; ?>
-								</h3>
-								<p>
-									<?php echo $fields['service_single_2_text']; ?>
-								</p>
-								<div class="services-link-middle">
-									<a href='<?php echo $fields['service_single_2_link']; ?>'>Learn more</a>
+						<div class="single-left md-services-wrap col-xs-12 col-md-6 <?php if ($i == 2) : echo 'test2';
+																					endif; ?> ">
+							<div class="service-single-in">
+								<div class="service-single-in-top">
+									<img src="<?php echo $fields['services_single_img_' . $i]['url']; ?>" alt="Service image" />
+								</div>
+								<div class="service-single-in-bottom">
+									<img src="<?php echo $fields['services_box_img_' . $i]['url']; ?>" alt="Service box image" />
+									<h3>
+										<?php echo $fields['service_single_' . $i . '_title']; ?>
+									</h3>
+									<p>
+										<?php echo $fields['service_single_' . $i . '_text']; ?>
+									</p>
+									<div class="services-link">
+										<a href='<?php echo $fields['service_single_' . $i . '_link']; ?>'>Learn more</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="single-right col-sm-4">
-						<div class="service-single-in">
-							<div class="service-single-in-top">
-								<img src="<?php echo $fields['service_single_3_img']['url']; ?>" alt="Packing and Unpacking" />
-							</div>
-							<div class="service-single-in-bottom">
-								<img src="<?php echo $fields['service_box_3_img']['url']; ?>" alt="Box" />
-								<h3>
-									<?php echo $fields['service_single_3_title']; ?>
-								</h3>
-								<p>
-									<?php echo $fields['service_single_3_text']; ?>
-								</p>
-								<div class="services-link-right">
-									<a href='<?php echo $fields['service_single_3_link']; ?>'>Learn more</a>
-								</div>
-							</div>
-						</div>
-					</div>
+
+
+
+					<?php } ?>
+
+
+					<!-- 				 
+				 <div class="single-left col-sm-6">
+					 <div class="service-single-in">		
+						 <div class="service-single-in-top">
+							  <img src="<? php // echo $fields['services_single_1_img']['url']; 
+										?>" alt="Packing and Unpacking"/>
+						 </div>
+						 <div class="service-single-in-bottom">
+							 <img src="<? php // echo $fields['services_box_img']['url']; 
+										?>" alt="Box"/>
+						 <h3>
+							 <? php // echo $fields['service_single_1_title']; 
+								?>
+						 </h3>
+						 <p>
+							 <? php // echo $fields['service_single_1_text']; 
+								?>
+						 </p>
+							 <div class="services-link">
+								<a href='<? php // echo $fields['service_single_1_link']; 
+											?>'>Learn more</a>
+							 </div>
+						 </div>					 
+					 </div>
+				 </div> -->
+					<!-- 				 	 <div class="single-mid col-sm-6">
+					 <div class="service-single-in">
+						 <div class="service-single-in-top">
+						 <img src="<? php // echo $fields['service_single_2_img']['url']; 
+									?>" alt="Packing and Unpacking"/>
+						 </div>
+						 <div class="service-single-in-bottom">
+						 
+						 <img src="<? php // echo $fields['service_car_img']['url']; 
+									?>" alt="Box"/>
+						 <h3>
+							 <? php // echo $fields['service_single_2_title']; 
+								?>
+						 </h3>
+						 <p>
+							 <? php // echo $fields['service_single_2_text']; 
+								?>
+						 </p>
+							 <div class="services-link-middle">
+								<a href='<? php // echo $fields['service_single_2_link']; 
+											?>'>Learn more</a>
+							 </div>
+						 </div>
+					 </div>
+				 </div> -->
+					<!-- 				 	 <div class="single-right col-sm-6">
+					 <div class="service-single-in">
+						 <div class="service-single-in-top">
+						 <img src="<? php // echo $fields['service_single_3_img']['url']; 
+									?>" alt="Packing and Unpacking"/>
+						 </div>
+						 <div class="service-single-in-bottom">
+						 <img src="<? php // echo $fields['service_box_3_img']['url']; 
+									?>" alt="Box"/>
+						 <h3>
+							 <? php // echo $fields['service_single_3_title']; 
+								?>
+						 </h3>
+						 <p>
+							 <? php // echo $fields['service_single_3_text']; 
+								?>
+						 </p>
+							 <div class="services-link-right">
+								<a href='<? php // echo $fields['service_single_3_link']; 
+											?>'>Learn more</a>
+							 </div>
+						 </div>
+					 </div>
+				 </div> -->
+					<!-- 				 	 <div class="single-right col-sm-6">
+					 <div class="service-single-in">
+						 <div class="service-single-in-top">
+						 <img src="<? php // echo $fields['service_single_3_img']['url']; 
+									?>" alt="Packing and Unpacking"/>
+						 </div>
+						 <div class="service-single-in-bottom">
+						 <img src="<? php // echo $fields['service_box_3_img']['url']; 
+									?>" alt="Box"/>
+						 <h3>
+							 <? php // echo $fields['service_single_3_title']; 
+								?>
+						 </h3>
+						 <p>
+							 <? php // echo $fields['service_single_3_text']; 
+								?>
+						 </p>
+							 <div class="services-link-right">
+								<a href='<? php // echo $fields['service_single_3_link']; 
+											?>'>Learn more</a>
+							 </div>
+						 </div>
+					 </div>
+				 </div> -->
 				</div>
 			</div>
 		</section>

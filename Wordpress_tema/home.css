@@ -429,8 +429,12 @@ section, .site-footer, .site-info {
 	margin-top: -118px;
 	float:left;
 	width:100%;
-	padding: 60px 40px;
+	padding:35px 40px 60px 40px;
 	background: #fff;
+}
+.service-single-in-top img{
+	width:100%;
+	padding-top:25px;
 }
 @media all and (max-width: 1199px){
 	.service-single-in-top img{
@@ -587,10 +591,15 @@ section, .site-footer, .site-info {
 	
 	.service-single-holder .single-left, .service-single-holder .single-mid,.service-single-holder .single-right {
 		padding:15px;
-		float:left;
 		width:100%;
 	}
 	
+}
+.service-single-holder-service-page {
+	  float: left;
+	  width: 100%;
+	  padding: 35px 40px 60px 40px;
+	  background: #fff;
 }
 /* service end */
 /* about */
