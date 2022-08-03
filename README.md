@@ -4,7 +4,7 @@
 
 #
 
-# Notes and projects from IT Academy
+# Notes and projects
 
 #
 
