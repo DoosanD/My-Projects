@@ -1,0 +1,111 @@
+/* breadcrumbs */
+#breadcrumbs{
+	color:#FFFFFF; 
+	background-color: #2A2A2A;
+	text-align: center;
+	height: 48px;
+	line-height: 48px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+/* 	line-height: 19px; */
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+#breadcrumbs a{
+	color:#FFE829;
+}
+/* breadcrumbs end */
+/* services-hero */
+.hero-header{
+	margin-top: 97px;
+	color:#FFFFFF; 
+	text-align: center;
+	height: 48px;
+	line-height: 48px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+}
+.hero-header h1{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -0.02em;
+	color: #FFFFFF;
+	padding-bottom: 15px;
+}
+.hero-header p{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	/* or 162% */
+	text-align: center;
+	color: #FFFFFF;
+	width: 916px;
+	margin:auto;
+}
+/* services-hero end */
+/* services-content */
+.service-single-holder-service-page {
+	  float: left;
+	  width: 100%;
+	  padding: 35px 40px 60px 40px;
+	  background: #fff;
+	  display: flex;
+	  flex-wrap: wrap;
+}
+.content-right .hero-form{
+	margin-top: 59px !important;
+	margin-left: -10px !important;
+}
+.content-below-services p{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	/* or 175% */
+	letter-spacing: -0.02em;
+	color: #525252;
+	padding: 25px 0px 45px;
+}
+.content-below-services h2{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 56px;
+	/* or 140% */
+	color: #2A2A2A;
+	padding-top: 30px;
+}
+.content-below-services .img-title{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 24px;
+	/* identical to box height, or 171% */
+	letter-spacing: -0.02em;
+	color: #000000;
+	margin: -33px 0px 0px 0;
+	display:flex;
+	justify-content: center;
+}
+.content-below-services-img{
+	padding: 15px 0
+}
+.unordered-list-content{
+	background: #F2F2EF;
+	padding: 25px;
+}
+.unordered-list-content li {
+	padding: 8px;
+}
+/* services-content end */
