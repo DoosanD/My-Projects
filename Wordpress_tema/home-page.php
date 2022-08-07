@@ -21,12 +21,6 @@ get_header();
 							</li>
 
 						<?php 	} ?>
-						<!-- 		<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><? php // echo $fields['hero_list_text_1']; 
-																													?></div></li>
-			<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><? php // echo $fields['hero_list_text_2']; 
-																							?></div></li>
-			<li><img src="/wp-content/uploads/2022/07/check-1.svg" alt="check mark" /><div><? php // echo $fields['hero_list_text_3']; 
-																							?></div></li> -->
 					</ul>
 				</div>
 				<div class="hero-right right-pad col-lg-4 col-md-5">
@@ -73,106 +67,6 @@ get_header();
 
 
 					<?php } ?>
-
-
-					<!-- 				 
-				 <div class="single-left col-sm-6">
-					 <div class="service-single-in">		
-						 <div class="service-single-in-top">
-							  <img src="<? php // echo $fields['services_single_1_img']['url']; 
-										?>" alt="Packing and Unpacking"/>
-						 </div>
-						 <div class="service-single-in-bottom">
-							 <img src="<? php // echo $fields['services_box_img']['url']; 
-										?>" alt="Box"/>
-						 <h3>
-							 <? php // echo $fields['service_single_1_title']; 
-								?>
-						 </h3>
-						 <p>
-							 <? php // echo $fields['service_single_1_text']; 
-								?>
-						 </p>
-							 <div class="services-link">
-								<a href='<? php // echo $fields['service_single_1_link']; 
-											?>'>Learn more</a>
-							 </div>
-						 </div>					 
-					 </div>
-				 </div> -->
-					<!-- 				 	 <div class="single-mid col-sm-6">
-					 <div class="service-single-in">
-						 <div class="service-single-in-top">
-						 <img src="<? php // echo $fields['service_single_2_img']['url']; 
-									?>" alt="Packing and Unpacking"/>
-						 </div>
-						 <div class="service-single-in-bottom">
-						 
-						 <img src="<? php // echo $fields['service_car_img']['url']; 
-									?>" alt="Box"/>
-						 <h3>
-							 <? php // echo $fields['service_single_2_title']; 
-								?>
-						 </h3>
-						 <p>
-							 <? php // echo $fields['service_single_2_text']; 
-								?>
-						 </p>
-							 <div class="services-link-middle">
-								<a href='<? php // echo $fields['service_single_2_link']; 
-											?>'>Learn more</a>
-							 </div>
-						 </div>
-					 </div>
-				 </div> -->
-					<!-- 				 	 <div class="single-right col-sm-6">
-					 <div class="service-single-in">
-						 <div class="service-single-in-top">
-						 <img src="<? php // echo $fields['service_single_3_img']['url']; 
-									?>" alt="Packing and Unpacking"/>
-						 </div>
-						 <div class="service-single-in-bottom">
-						 <img src="<? php // echo $fields['service_box_3_img']['url']; 
-									?>" alt="Box"/>
-						 <h3>
-							 <? php // echo $fields['service_single_3_title']; 
-								?>
-						 </h3>
-						 <p>
-							 <? php // echo $fields['service_single_3_text']; 
-								?>
-						 </p>
-							 <div class="services-link-right">
-								<a href='<? php // echo $fields['service_single_3_link']; 
-											?>'>Learn more</a>
-							 </div>
-						 </div>
-					 </div>
-				 </div> -->
-					<!-- 				 	 <div class="single-right col-sm-6">
-					 <div class="service-single-in">
-						 <div class="service-single-in-top">
-						 <img src="<? php // echo $fields['service_single_3_img']['url']; 
-									?>" alt="Packing and Unpacking"/>
-						 </div>
-						 <div class="service-single-in-bottom">
-						 <img src="<? php // echo $fields['service_box_3_img']['url']; 
-									?>" alt="Box"/>
-						 <h3>
-							 <? php // echo $fields['service_single_3_title']; 
-								?>
-						 </h3>
-						 <p>
-							 <? php // echo $fields['service_single_3_text']; 
-								?>
-						 </p>
-							 <div class="services-link-right">
-								<a href='<? php // echo $fields['service_single_3_link']; 
-											?>'>Learn more</a>
-							 </div>
-						 </div>
-					 </div>
-				 </div> -->
 				</div>
 			</div>
 		</section>
