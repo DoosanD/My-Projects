@@ -81,8 +81,16 @@ $backgroundimg = get_the_post_thumbnail_url();
                         <div class="line-bottom"></div>
                     </div>
                 </div>
-                <div>
-                    Our Services (placeholder)
+                <div class="sidebar">
+                    <div class="md-sidebar-menu">
+                        <h3>Our Services</h3>
+                        <?php
+                        wp_nav_menu(array(
+                            'theme_location' => 'menu-2',
+                            'menu_id'        => 'Sidebar',
+                        ));
+                        ?>
+                    </div>
 
                 </div>
             </div>
