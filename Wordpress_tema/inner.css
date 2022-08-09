@@ -66,10 +66,42 @@
 	margin-top: 59px !important;
 	margin-left: -10px !important;
 }
+.content-right h3{
+	text-align: center;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 41px;
+	color: #2A2A2A;
+	padding: 15px;
+	border-bottom: 1px solid #000;
+}
+@media screen and (max-width: 1199px){
+	.content-left .service-single-holder-service-page{
+		padding: 35px 0px 0px 0px;
+	}
+}
+@media screen and (max-width: 991px){
+	.content-right .hero-form{
+		top: 120px;
+		position: relative;
+		margin-left:0 !important;
+	}
+}
+@media screen and (max-width: 576px){
+	.content-left .single-left {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 434px){
+	.content-right .hero-form{
+		top: 240px;
+	}
+}
 .sidebar{
 	display: inline-flex;
 	padding-top: 20px;
 	padding-bottom:30px;
+	padding-left: 20px;
 }
 .sidebar h3{
 	font-family: 'Inter';
@@ -138,3 +170,42 @@
 	padding: 8px;
 }
 /* services-content end */
+/* contact-form */
+#gform_submit_button_2{
+	border: 1px solid #2A2A2A;
+	width: 200px;
+	height:60px;
+	background:  #F9F9F9;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 21px;
+	color: #2A2A2A;
+	margin: 20px 0px 60px 0px;
+}
+@media screen and (max-width: 991px){
+/* 	#gform_submit_button_2 {
+		margin: 20px 0px 60px 20px;
+	} */
+	.contact-form .gform_body.gform-body {
+		padding: 0;
+	}
+}
+#gform_fields_2 input::placeholder, #input_2_5::placeholder {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	/* identical to box height */
+	letter-spacing: -0.02em;
+	color: #525252;
+}
+#gform_2 input {
+  height: 60px;
+}
+#input_2_5,#input_2_1_3,#input_2_2,#input_2_3{
+	padding:15px;
+}
+/* contact-form end */
