@@ -67,6 +67,11 @@ $backgroundimg = get_the_post_thumbnail_url();
 
                         <?php } ?>
                     </div>
+
+                    <div class="content-below-services md-inner-cont-info">
+                        <?php the_content(); ?>
+                    </div>
+
                 </div>
                 <div class="content-right hero-right right-pad col-lg-4 col-md-5">
                     <div class="hero-form">
@@ -80,18 +85,17 @@ $backgroundimg = get_the_post_thumbnail_url();
                         ?>
                         <div class="line-bottom"></div>
                     </div>
-                </div>
-                <div class="sidebar">
-                    <div class="md-sidebar-menu">
-                        <h3>Our Services</h3>
-                        <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'menu-2',
-                            'menu_id'        => 'Sidebar',
-                        ));
-                        ?>
+                    <div class="sidebar">
+                        <div class="md-sidebar-menu">
+                            <h4 class="sidebar-header">Our Services</h4>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'menu-2',
+                                'menu_id'        => 'Sidebar',
+                            ));
+                            ?>
+                        </div>
                     </div>
-
                 </div>
             </div>
             <div class="container">
@@ -100,7 +104,6 @@ $backgroundimg = get_the_post_thumbnail_url();
                         <?php echo $fieldsInner['after_services_text']; ?>
                     </p>
                     <div>
-                        <img class="content-below-services-img" src="/wp-content/uploads/2022/08/asian-man-using-laptop-computer-connect-with-high-speed-internet-5g-wireless-connection-technology-work-from-home-3.jpg" alt="man with laptop" />
                         <p class="img-title">
                             <?php echo $fieldsInner['image_title'] ?>
                         </p>
