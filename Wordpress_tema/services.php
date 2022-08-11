@@ -68,9 +68,9 @@ $backgroundimg = get_the_post_thumbnail_url();
                         <?php } ?>
                     </div>
 
-                    <div class="content-below-services md-inner-cont-info">
-                        <?php the_content(); ?>
-                    </div>
+                    <!-- 			<div class="content-below-services md-inner-cont-info">
+				<?php the_content(); ?>
+			</div> -->
 
                 </div>
                 <div class="content-right hero-right right-pad col-lg-4 col-md-5">
@@ -98,54 +98,54 @@ $backgroundimg = get_the_post_thumbnail_url();
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="content-below-services col-lg-8 col-md-7">
-                    <p>
-                        <?php echo $fieldsInner['after_services_text']; ?>
-                    </p>
-                    <div>
-                        <p class="img-title">
-                            <?php echo $fieldsInner['image_title'] ?>
-                        </p>
-                    </div>
-                    <div class="content-title-text2">
-                        <h2>
-                            <?php echo $fieldsInner['inner_title_2'] ?>
-                        </h2>
-                        <p>
-                            <?php echo $fieldsInner['sub_title_2'] ?>
-                        </p>
-                    </div>
-                    <div class="unordered-list-content">
-
-                        <?php if (have_rows('list_items')) : ?>
-
-                            <ul class="list-content">
-
-                                <?php while (have_rows('list_items')) : the_row(); ?>
-
-                                    <li class="list-item">
-                                        <?php the_sub_field('list_item'); ?>
-                                    </li>
-
-                                <?php endwhile; ?>
-
-                            </ul>
-
-                        <?php endif; ?>
-
-                    </div>
-                    <div class="content-title-text3">
-                        <h2>
-                            <?php echo $fieldsInner['inner_title_3'] ?>
-                        </h2>
-                        <p>
-                            <?php echo $fieldsInner['sub_title_3'] ?>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+            <!-- 		  <div class="container">
+			  <div class="content-below-services col-lg-8 col-md-7">
+		      <p>
+			    <?php echo $fieldsInner['after_services_text']; ?>
+			  </p>
+				  <div> 
+					  <p class="img-title">
+					   <?php echo $fieldsInner['image_title'] ?>
+					  </p>
+				 </div>
+			  <div class="content-title-text2">
+				  <h2>
+					  <?php echo $fieldsInner['inner_title_2'] ?>
+				  </h2>
+				  <p>
+					  <?php echo $fieldsInner['sub_title_2'] ?>
+				  </p>
+			  </div>
+			  <div class="unordered-list-content">
+				  
+				  <?php if (have_rows('list_items')) : ?>
+				  
+				  <ul class="list-content">
+				  
+				  	<?php while (have_rows('list_items')) : the_row(); ?>
+					  
+				  <li class="list-item">
+				  		<?php the_sub_field('list_item'); ?>
+				  </li>
+					  
+				  	<?php endwhile; ?>
+				  					  
+				  </ul>
+				  
+				  <?php endif; ?>
+ 				  
+			  </div>
+ 			   <div class="content-title-text3">
+				  <h2>
+					  <?php echo $fieldsInner['inner_title_3'] ?>
+				  </h2>
+				  <p>
+					  <?php echo $fieldsInner['sub_title_3'] ?>
+				  </p>
+			  </div>
+			   </div>
+			  		  
+			  </div> -->
         </section>
     </div>
 </main>

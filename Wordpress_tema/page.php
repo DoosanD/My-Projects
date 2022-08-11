@@ -12,7 +12,8 @@
  *
  * @package Movers_Development
  */
-
+$fields = get_fields('option');
+$fieldsInner = get_fields();
 get_header();
 $backgroundimg = get_the_post_thumbnail_url();
 $backgroundbackup = '/wp-content/uploads/2022/07/gallery02.jpg';
@@ -21,7 +22,7 @@ $backgroundbackup = '/wp-content/uploads/2022/07/gallery02.jpg';
 <main id="primary" class="site-main">
     <section class="hero-content" style="background:url(<?php if (empty($backgroundimg)) : echo $backgroundbackup;
                                                         else : echo $backgroundimg;
-                                                        endif; ?>);background-repeat: no-repeat;background-size: cover;">
+                                                        endif; ?>);background-repeat: no-repeat;background-size: cover; cover;height: 400px;">
         <div class="md-breadcrumbs-pages">
             <?php
             if (function_exists('yoast_breadcrumb')) {
@@ -79,7 +80,7 @@ $backgroundbackup = '/wp-content/uploads/2022/07/gallery02.jpg';
 
                 <div class="sidebar">
                     <div class="md-sidebar-menu">
-                        <h3>Our Services</h3>
+                        <h4>Our Services</h4>
                         <?php
                         wp_nav_menu(array(
                             'theme_location' => 'menu-2',
@@ -90,55 +91,55 @@ $backgroundbackup = '/wp-content/uploads/2022/07/gallery02.jpg';
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="content-below-services col-lg-8 col-md-7">
-                <p>
-                    <?php echo $fieldsInner['after_services_text']; ?>
-                </p>
-                <div>
+        <!-- 		  <div class="container">
+			  <div class="content-below-services col-lg-8 col-md-7">
+		      <p>
+			    <?php echo $fieldsInner['after_services_text']; ?>
+			  </p>
+				  <div> 
 
-                    <p class="img-title">
-                        <?php echo $fieldsInner['image_title'] ?>
-                    </p>
-                </div>
-                <div class="content-title-text2">
-                    <h2>
-                        <?php echo $fieldsInner['inner_title_2'] ?>
-                    </h2>
-                    <p>
-                        <?php echo $fieldsInner['sub_title_2'] ?>
-                    </p>
-                </div>
-                <div class="unordered-list-content">
-
-                    <?php if (have_rows('list_items')) : ?>
-
-                        <ul class="list-content">
-
-                            <?php while (have_rows('list_items')) : the_row(); ?>
-
-                                <li class="list-item">
-                                    <?php the_sub_field('list_item'); ?>
-                                </li>
-
-                            <?php endwhile; ?>
-
-                        </ul>
-
-                    <?php endif; ?>
-
-                </div>
-                <div class="content-title-text3">
-                    <h2>
-                        <?php echo $fieldsInner['inner_title_3'] ?>
-                    </h2>
-                    <p>
-                        <?php echo $fieldsInner['sub_title_3'] ?>
-                    </p>
-                </div>
-            </div>
-
-        </div>
+					  <p class="img-title">
+					   <?php echo $fieldsInner['image_title'] ?>
+					  </p>
+				 </div>
+			  <div class="content-title-text2">
+				  <h2>
+					  <?php echo $fieldsInner['inner_title_2'] ?>
+				  </h2>
+				  <p>
+					  <?php echo $fieldsInner['sub_title_2'] ?>
+				  </p>
+			  </div>
+			  <div class="unordered-list-content">
+				  
+				  <?php if (have_rows('list_items')) : ?>
+				  
+				  <ul class="list-content">
+				  
+				  	<?php while (have_rows('list_items')) : the_row(); ?>
+					  
+				  <li class="list-item">
+				  		<?php the_sub_field('list_item'); ?>
+				  </li>
+					  
+				  	<?php endwhile; ?>
+				  					  
+				  </ul>
+				  
+				  <?php endif; ?>
+				  
+			  </div>
+			   <div class="content-title-text3">
+				  <h2>
+					  <?php echo $fieldsInner['inner_title_3'] ?>
+				  </h2>
+				  <p>
+					  <?php echo $fieldsInner['sub_title_3'] ?>
+				  </p>
+			  </div>
+			   </div>
+			  		  
+			  </div> -->
     </section>
 </main><!-- #main -->
 

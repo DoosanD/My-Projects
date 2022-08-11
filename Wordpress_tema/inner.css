@@ -81,7 +81,7 @@
 	}
 }
 @media screen and (max-width: 991px){
-	.content-right .hero-form{
+	.content-right .hero-form, .sidebar{
 		top: 120px;
 		position: relative;
 		margin-left:0 !important;
@@ -93,17 +93,15 @@
 	}
 }
 @media screen and (max-width: 434px){
-	.content-right .hero-form{
+	.content-right .hero-form, .sidebar{
 		top: 240px;
 	}
 }
 .sidebar{
-	display: inline-flex;
 	padding-top: 20px;
 	padding-bottom:30px;
-	padding-left: 20px;
 }
-.sidebar h3{
+.sidebar-header, .sidebar h4{
 	font-family: 'Inter';
 	font-weight: 700;
 	font-size: 34px;
@@ -168,6 +166,12 @@
 }
 .unordered-list-content li {
 	padding: 8px;
+}
+.wp-image-215, .wp-image-196,.wp-image-209 {
+	margin-left:-60px!important;
+}
+#caption-attachment-196,#caption-attachment-209,#caption-attachment-215{
+	margin-left:-116px;
 }
 /* services-content end */
 /* contact-form */
