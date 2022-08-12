@@ -65,7 +65,7 @@
     content: "\203A";
     position: absolute;
     right: -20px;
-    top: 11.5px;
+/*     top: 11.5px; */
     font-size: 24px;
     transform: rotateZ(90deg);
   }
@@ -306,6 +306,9 @@
 #primary-menu .menu-item a:hover {
     color: black;
 }
+/* #primary-menu .menu-item a:active{
+	color:black;
+} */
 #primary-menu > #menu-item-133 a, .mobile-estimate {
 	background-image: url('/wp-content/uploads/2022/07/read-more-arrow-1.svg');
 	background-position: 165px 17px;
@@ -368,6 +371,14 @@
 }
 
 /* Header end */
+/* before footer */
+.before-footer{
+/* 	margin-top: -137px; */
+	background-color:white;
+	width: 58%!important;
+	margin-left: 47px!important;
+}
+/* before footer end */
 /* footer */
 .site-footer{
 	background:#2A2A2A;
@@ -399,7 +410,7 @@
 }
 .single-right h3{
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 23px;
 	line-height: 33px;
 	color: #FFFFFF;
 } 

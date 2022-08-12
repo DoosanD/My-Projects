@@ -235,6 +235,7 @@ section, .site-footer, .site-info {
 	color: #2A2A2A;
 	border: none;
 	box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.02), 0px 6px 20px 0 rgba(0, 0, 0, 0.15);
+	padding: 10px 17px 10px 17px;
 }
 #input_1_9{
 	background-image: url('/wp-content/uploads/2022/07/calendar-1.svg');
@@ -471,21 +472,25 @@ section, .site-footer, .site-info {
 	font-size: 25px;
 	line-height: 31px;
 	color: #2A2A2A;
-	margin-top: auto;
+/* 	margin-top: auto; */
+	margin-bottom:auto;
 }
 .service-single-in p{ 
-	padding-top:15px;;
+	padding-top:15px;
+	padding-left:10px;
+	padding-right:10px;
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 28px;
 	text-align: center;
 	letter-spacing: -0.02em;
 	color: #2A2A2A;
+	margin-top:auto;
 }
 .services-link {
 	float: left;
     width: 100%;
-    margin-top: 30px;
+/*     margin-top: 20px; */
 	margin-top: auto;
 	display: flex;
 	justify-content: center;
@@ -790,7 +795,7 @@ section, .site-footer, .site-info {
 }
 .blog-post-image-container img{
 	width: 100%;
-/* 	height: 200px; */
+	height: 200px;
 	padding: 20px;
 }
 .blog-post-date{
@@ -807,7 +812,7 @@ section, .site-footer, .site-info {
 	color: #2A2A2A;
 }
 .blog-post-container h3{
-	padding:5px 10px 10px 20px;
+	padding:5px 40px 10px 20px;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
@@ -815,11 +820,14 @@ section, .site-footer, .site-info {
 	line-height: 31px;
 	color: #2A2A2A;
 }
+.blog-post-container a:first-child,.blog-post-container a:first-child:hover,.blog-post-container a:first-child:focus,.blog-post-container a:first-child:link,.blog-post-container a:first-child:active, .blog-post-title, .blog-post-container a:first-child:visited{
+	color: #2A2A2A;
+}
 .blog-post-container p:nth-child(3){
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 28px;
 	/* or 175% */
 	letter-spacing: -0.02em;
