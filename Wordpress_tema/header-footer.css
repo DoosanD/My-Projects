@@ -378,6 +378,12 @@
 	width: 58%!important;
 	margin-left: 47px!important;
 }
+@media screen and (max-width: 991px){
+	.before-footer{
+		width:100%!important;
+		margin-left:0!important;
+	}
+}
 /* before footer end */
 /* footer */
 .site-footer{
