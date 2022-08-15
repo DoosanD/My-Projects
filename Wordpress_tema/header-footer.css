@@ -359,7 +359,7 @@
 		font-size:18px;
 	}
 	#gform_next_button_1_10{
-		margin: 0px 0 0 6px;
+/* 		margin: 0px 0 0 6px; */
 /* 		width: 100%;
 		height: 56px; */
 		background-position: 92%;
@@ -373,16 +373,23 @@
 /* Header end */
 /* before footer */
 .before-footer{
+	float:left;
 /* 	margin-top: -137px; */
 	background-color:white;
 	width: 58%!important;
 	margin-left: 47px!important;
+}
+.gform_footer.top_label{
+	float:left;
 }
 @media screen and (max-width: 991px){
 	.before-footer{
 		width:100%!important;
 		margin-left:0!important;
 	}
+}
+.page-id-121 .before-footer,.page-id-125 .before-footer,.page-id-187 .before-footer{
+	margin-top: -137px;
 }
 /* before footer end */
 /* footer */

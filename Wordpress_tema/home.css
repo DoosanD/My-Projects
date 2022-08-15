@@ -77,7 +77,7 @@ section, .site-footer, .site-info {
 @media screen and (max-width: 3840px) and (min-width: 1199px){
 	.hero-right .hero-form{
 		width: 368px;
-		height: 430px;
+		height: 435px;
 	}
 	.line-bottom{
 		width: 368px;
@@ -102,8 +102,9 @@ section, .site-footer, .site-info {
     border-bottom: 1px solid #000;
 }
 .gform_page_footer  {
-	    float: left;
+	float: left;
     width: 100%;
+	display:flex;
 }
 .hero-left ul li div {
 	margin: -40px 0px 0px 45px;
@@ -166,6 +167,7 @@ section, .site-footer, .site-info {
 		margin: -10px 0px 0px 13px;
 		font-size: 46px;
 		line-height: 55px;
+		padding: 20px 0 70px 0px;
 	}
 	.hero-section {
   		padding: 40px 0 200px 0;
@@ -187,7 +189,8 @@ section, .site-footer, .site-info {
 		line-height: 40px;
 		/* or 135% */
 		letter-spacing: -0.02em;
-		padding-bottom: 10px;
+		padding-bottom: 30px;
+		padding-top: 0;
 	}
 	.hero-left ul li div{
 		font-weight: 500;
@@ -213,6 +216,11 @@ section, .site-footer, .site-info {
 	}
 	.service-single-holder{
 		padding:0;
+	}
+}
+@media all and (max-width:479px){
+		#primary .hero-section{
+		padding-bottom:140px;
 	}
 }
 /* hero end */
@@ -317,6 +325,7 @@ section, .site-footer, .site-info {
 		position:relative;
 		bottom:-390px;
 		margin-left: 11px;
+		margin-bottom:-17px;
 	}
 	.hero-right h3{
 		font-size: 24px;
@@ -330,8 +339,10 @@ section, .site-footer, .site-info {
 	background-position: 96%;
 	}
 	.hero-form .gform_next_button {
-		width:100%;
-		margin:0!important;
+		width:70%;
+		margin:0 auto;
+		text-align:center;
+		padding:0;
 	}
 	.hero-right .hero-form{
 		width: 100%;
@@ -341,10 +352,13 @@ section, .site-footer, .site-info {
 		padding:0 0 5px 0;
 	}
 	.gform_next_button {
-		background-position: 96% 50%;
+/* 		background-position: 96% 50%; */
+		background-position-x: calc(100% - 20%);
+		max-width: 300px;
+		width: 100%!important;
 	}
 	.gform_body.gform-body {
-   		padding: 15px 20px 6px 20px;
+   		padding: 15px 20px 12px 20px;
 	}
 }
 @media all and (max-width: 576px){
@@ -798,6 +812,9 @@ section, .site-footer, .site-info {
 .blog-post-container{
 	background-color: #FFFFFF;
 	padding-bottom:50px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 .blog-post-image-container img{
 	width: 100%;
@@ -833,7 +850,7 @@ section, .site-footer, .site-info {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 28px;
 	/* or 175% */
 	letter-spacing: -0.02em;
@@ -851,7 +868,7 @@ section, .site-footer, .site-info {
 	letter-spacing: -0.03em;
 	color: #FFFFFF;
 	padding: 15px 25px;
-	margin: 0px 0px 0px 20px;
+	margin: auto auto auto 20px;
 }
 .blog-section{
 	padding: 30px 0px 70px 0px;
