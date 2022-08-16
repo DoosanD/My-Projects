@@ -321,6 +321,15 @@ section, .site-footer, .site-info {
 		position:relative; */
 		top: -160px;
 	}
+	.page-id-187 .hero-right{
+		top: -300px;
+	}
+	.page-id-227 .hero-right{
+		top: -250px;
+	}
+	.page-id-230 .hero-right{
+		top: -215px;
+	}
 	.hero-left ul{
 		position:relative;
 		bottom:-390px;
@@ -811,7 +820,7 @@ section, .site-footer, .site-info {
 }
 .blog-post-container{
 	background-color: #FFFFFF;
-	padding-bottom:50px;
+	padding-bottom:20px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -843,6 +852,9 @@ section, .site-footer, .site-info {
 	line-height: 31px;
 	color: #2A2A2A;
 }
+.page-id-11 .blog-post-container p:nth-child(3){
+	padding:5px 53px 50px 20px;
+}
 .blog-post-container a:first-child,.blog-post-container a:first-child:hover,.blog-post-container a:first-child:focus,.blog-post-container a:first-child:link,.blog-post-container a:first-child:active, .blog-post-title, .blog-post-container a:first-child:visited{
 	color: #2A2A2A;
 }
@@ -855,7 +867,7 @@ section, .site-footer, .site-info {
 	/* or 175% */
 	letter-spacing: -0.02em;
 	color: #000000;
-	padding:10px 10px 40px 20px;
+	padding:10px 36px 40px 20px;
 }
 .blog-post-more{
 	background-color: black;
@@ -871,7 +883,7 @@ section, .site-footer, .site-info {
 	margin: auto auto auto 20px;
 }
 .blog-section{
-	padding: 30px 0px 70px 0px;
+	padding: 0px 0px 70px 0px;
 }
 .inner-content a:last-child{
 	font-family: 'Inter';
@@ -884,6 +896,11 @@ section, .site-footer, .site-info {
 }
 .blog-post-more img {
   margin: 0 0 1px 10px;
+}
+@media all and (max-width: 767px){
+	.blog-posts-container .blog-wrap-container{
+		padding: 0;
+	}
 }
 /* blog end */
 /* pictures */
