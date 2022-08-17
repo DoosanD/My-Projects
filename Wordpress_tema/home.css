@@ -328,7 +328,10 @@ section, .site-footer, .site-info {
 		top: -250px;
 	}
 	.page-id-230 .hero-right{
-		top: -215px;
+		top: -285px;
+	}
+	.page-id-234 .hero-right{
+		top: -207px;
 	}
 	.hero-left ul{
 		position:relative;
@@ -355,7 +358,7 @@ section, .site-footer, .site-info {
 	}
 	.hero-right .hero-form{
 		width: 100%;
-		height: 100%;
+/* 		height: 100%; */
 	}
 	#gform_fields_1 {
 		padding:0 0 5px 0;
@@ -419,6 +422,9 @@ section, .site-footer, .site-info {
 @media all and (max-width: 434px){
 	.hero-right .hero-form{
 		margin-top:11px;
+	}
+	.page-id-234 .hero-right{
+		top: -280px;
 	}
 }
 @media all and (max-width: 352px){

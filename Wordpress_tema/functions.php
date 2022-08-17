@@ -53,6 +53,7 @@ if (!function_exists('md_theme_setup')) :
         register_nav_menus(
             array(
                 'menu-1' => esc_html__('Primary', 'md_theme'),
+                'menu-2' => esc_html__('sidebar', 'md_theme'),
                 'footer-menu' => esc_html__('Footer Menu', 'md_theme')
             )
         );
@@ -221,17 +222,38 @@ require_once get_template_directory() . '/inc/tgm-activate.php';
 //     if ( gf_upgrade()->get_submissions_block() ) {
 //         return $message;
 //     }
- 
-//     $message = "<div class='validation_error'><p>ASDThere was a problem with your submission. Errors have been highlighted below.</p>";
+
+//     $message = "<div class='validation_error'><p>TEST There was a problem with your submission. Errors have been highlighted below.</p>";
 //     $message .= '<ul>';
- 
+
 //     foreach ( $form['fields'] as $field ) {
 //         if ( $field->failed_validation ) {
 //             $message .= sprintf( '<li>%s - %s</li>', GFCommon::get_label( $field ), $field->validation_message );
 //         }
 //     }
- 
+
 //     $message .= '</ul></div>';
- 
+
 //     return $message;
 // }, 10, 2 );
+// 
+
+// function wpb_hook_javascript() {
+//   if (is_single ('297')) { 
+//     
+?>
+// <script type="text/javascript">
+    // 			  const addClass = () => {
+    // 				var element = document.getElementById("secondary");
+    // 				element.classList.add("container");
+    // 				  alert("test");
+    // 		     };
+    // 				 addClass();
+    // 				 document.getElementById("secondary").classList.add("container");
+    // 				 alert("test")	
+    //         
+</script>
+// <?php
+//   }
+// }
+// add_action('wp_head', 'wpb_hook_javascript');
