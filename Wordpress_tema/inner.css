@@ -84,6 +84,9 @@
 	.hero-content{
 		height:780px;
 	}
+	.page-id-125 .hero-content {
+		height: 900px;
+	}
 }
 /* services-hero end */
 /* services-content */
