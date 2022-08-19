@@ -242,7 +242,7 @@ require_once get_template_directory() . '/inc/tgm-activate.php';
 //   if (is_single ('297')) { 
 //     
 ?>
- <script type="text/javascript">
+<script type="text/javascript">
     // 			  const addClass = () => {
     // 				var element = document.getElementById("secondary");
     // 				element.classList.add("container");
@@ -253,7 +253,7 @@ require_once get_template_directory() . '/inc/tgm-activate.php';
     // 				 alert("test")	
     //         
 </script>
- <?php
+<?php
 //   }
 // }
 // add_action('wp_head', 'wpb_hook_javascript');
