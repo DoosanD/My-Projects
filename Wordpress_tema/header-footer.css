@@ -416,9 +416,15 @@
 		margin-top: 0px;
 		margin-left: 0px !important;
 	}
-	.page-id-119 .before-footer {
+	.page-id-119 .before-footer,.page-id-131 .before-footer  {
 		margin-top: 50px;
 		margin-left: 0px !important;
+	}
+}
+@media screen and (max-width: 991px){
+	.page-id-125 .before-footer, .page-id-121 .before-footer{
+		margin-top: 50px;
+		margin-left: 0px;
 	}
 }
 .page-id-227 .before-footer, .page-id-187 .before-footer, .page-id-230 .before-footer, .page-id-234 .before-footer{
