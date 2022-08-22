@@ -96,7 +96,7 @@
 .service-single-holder-service-page {
 	  float: left;
 	  width: 100%;
-	  padding: 35px 40px 60px 40px;
+	  padding: 5px 40px 60px 40px;
 	  background: #fff;
 	  display: flex;
 	  flex-wrap: wrap;
@@ -152,7 +152,7 @@
 .sidebar-header, .sidebar h4{
 	font-family: 'Inter';
 	font-weight: 700;
-	font-size: 34px;
+	font-size: 28px;
 	line-height: 41px;
 	color: #2A2A2A;
 	padding-bottom:20px;
@@ -165,13 +165,16 @@
 	padding: 15px 0;
 	border-bottom:1px solid #8F8F8F;
 	font-weight: 700;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 29px;
 	/* identical to box height */
 	color: #525252;
 }
 .sidebar a{
 	color:#525252;
+}
+.sidebar a:hover{
+	color:#2A2A2A;
 }
 .content-below-services p{
 	font-family: 'Inter';
@@ -189,7 +192,7 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 56px;
+	line-height: 42px;
 	/* or 140% */
 	color: #2A2A2A;
 	padding-top: 30px;
@@ -218,6 +221,9 @@
 .wp-image-215, .wp-image-196,.wp-image-209, .wp-image-216, .wp-image-210, .wp-image-197 {
 	margin-left:-40px!important;
 }
+.wp-image-284{
+	margin-left:-15px!important;
+} 
 #caption-attachment-196,#caption-attachment-209,#caption-attachment-215,#caption-attachment-216,#caption-attachment-210, #caption-attachment-197{
 	margin-left: -63px;
 	padding: 5px 50px 5px 30px;
@@ -244,8 +250,33 @@
 .content-below-services ul {
 /* 	margin-left: 12px; */
 	background: #F2F2EF;
-	padding: 25px;
+	padding: 30px;
+	font-size:16px;
+	line-height:30px;
 }
+.content-below-services a {
+	color:2A2A2A;
+}
+.content-below-services a:hover,.content-below-services a:active, .content-below-services a:focus {
+	color:#4867d2;
+}
+figcaption{
+	color: #525252;
+}
+#caption-attachment-284{
+	border-bottom: 1px solid #8F8F8F;
+	padding-bottom: 45px;
+	width: 101%;
+	margin-left: -15px;
+}
+.page-id-125 .content-below-services p {
+	padding: 25px 0px 25px;
+}
+@media screen and (max-height: 991px){
+	.md-sidebar-menu{
+		padding-bottom:50px;
+	}
+} 
 /* services-content end */
 /* blog */
 .blog-posts-container.content-left.col-lg-8.col-md-7 {
@@ -330,20 +361,21 @@
 /* 404 end */
 /* contact-form */
 #gform_submit_button_2{
-	border: 1px solid #2A2A2A;
+	border: 2px solid #2A2A2A;
 	width: 200px;
 	height:60px;
-	background:  #F9F9F9;
+	background:  #e6e6e6;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 17px;
 	line-height: 21px;
 	color: #2A2A2A;
-	margin: 20px 0px 60px 0px;
+	margin: 0px 0px 60px 0px;
 }
 #gform_submit_button_2:hover{
-	background-color:#bfbfbf;
+	background-color:#2A2A2A;
+	color:white;
 }
 @media screen and (max-width: 991px){
 /* 	#gform_submit_button_2 {
