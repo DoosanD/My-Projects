@@ -1,24 +1,15 @@
 <?php
 
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Movers_Development
+ * Template Name: Thank You
  */
+
 $fields = get_fields('option');
 $fieldsInner = get_fields();
 get_header();
 $backgroundimg = get_the_post_thumbnail_url();
 $backgroundbackup = '/wp-content/uploads/2022/07/gallery02.jpg';
 ?>
-
 <main id="primary" class="site-main">
     <section class="hero-content" style="background:url(<?php if (empty($backgroundimg)) : echo $backgroundbackup;
                                                         else : echo $backgroundimg;
@@ -103,5 +94,5 @@ $backgroundbackup = '/wp-content/uploads/2022/07/gallery02.jpg';
 </main><!-- #main -->
 
 <?php
-//get_sidebar();
+
 get_footer();
