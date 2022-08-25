@@ -81,14 +81,9 @@
 .hero-content-single{
 	height:400px;
 }
-@media screen and (max-width: 366px){
-	.hero-content-single{
-		height:500px;
-	}
-}
 @media screen and (max-width: 1199px) {
 	.hero-content{
-/* 		height:450px; */
+		height:450px;
 	}
 }
 @media screen and (max-width: 748px) {
@@ -103,7 +98,10 @@
 @media screen and (max-width: 604px) {
 	.hero-content{
 /* 		height:560px; */
-		height:440px;
+		height:500px;
+	}
+	.page-id-119 .hero-content{
+		height: 560px;
 	}
 	.page-id-230 .hero-content{
 		height:465px;
@@ -117,10 +115,13 @@
 	.page-id-227 .hero-header h1{
 		margin:0;
 	}
+	.page-item-227 .hero-content{
+/* 		height:500px; */
+	}
 }
 @media screen and (max-width: 522px) {
 	.hero-content{
-		height:620px;
+		height:580px;
 	}
 }
 @media screen and (max-width: 404px) {
@@ -129,6 +130,11 @@
 	}
 	.page-id-230 .hero-content{
 		height:660px;
+	}
+}
+@media screen and (max-width: 366px){
+	.hero-content-single{
+		height:500px;
 	}
 }
 @media screen and (max-width: 338px) {
@@ -146,6 +152,12 @@
 /* services-content */
 .content-left {
 	margin: 31px 0px 0px 0px;
+	float:left;
+	width:100%;
+}
+.content-right .hero-form, .sidebar, .md-sidebar-menu{
+	float:left;
+	width:100%;
 }
 .service-single-holder-service-page {
 	  float: left;
@@ -212,6 +224,8 @@
 .sidebar{
 	padding-top: 20px;
 	padding-bottom:30px;
+	float:left;
+	width:100%;
 }
 .sidebar-header, .sidebar h4{
 	font-family: 'Inter';
@@ -251,12 +265,12 @@
 	color: #525252;
 	padding: 25px 0px 40px;
 }
-.content-below-services h2{
+.content-below-services h2, .content-below-services h3{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 42px;
+	line-height: 56px;
 	/* or 140% */
 	color: #2A2A2A;
 	padding-top: 30px;
@@ -325,7 +339,7 @@
 	line-height:30px;
 }
 .content-below-services a {
-	color:2A2A2A;
+	color:#2A2A2A;
 }
 .content-below-services a:hover,.content-below-services a:active, .content-below-services a:focus {
 	color:#4867d2;
@@ -495,13 +509,16 @@ figcaption{
 }
 .page-id-131 .hero-right .hero-form{
 	height:auto;
-	width:90%;
+	width:100%;
 	margin-top:-105px!important;
-	margin-left:60px!important;
+/* 	margin-left:60px!important; */
 	position:unset!important;
 }
 .page-id-131 #gform_fields_1{
-	display:flex;
+	display:grid;
+}
+.page-id-131 .gform_wrapper.gravity-theme .gfield.gfield--width-full {
+    grid-column: span 4;
 }
 .page-id-131 #gform_next_button_1_10{
 	margin:auto;
@@ -519,6 +536,9 @@ figcaption{
 	}
 }
 @media screen and (max-width: 991px){
+	.page-id-131 .gform_wrapper.gravity-theme .gfield.gfield--width-full {
+		grid-column: span 12;
+}
 	.page-id-131 #gform_fields_1{
 		display:grid;
 	}
