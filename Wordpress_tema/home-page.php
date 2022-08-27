@@ -43,8 +43,8 @@ get_header();
 				<div class="service-single-holder">
 					<?php for ($i = 1; $i <= 4; $i++) { ?>
 
-						<div class="single-left md-services-wrap col-xs-12 col-md-6 <?php if ($i == 2) : echo 'test2';
-																					endif; ?> ">
+						<div class="single-left md-services-wrap col-xs-12 col-sm-6 col-md-6 <?php if ($i == 2) : echo 'test2';
+																								endif; ?> ">
 							<div class="service-single-in">
 								<div class="service-single-in-top">
 									<img src="<?php echo $fields['services_single_img_' . $i]['url']; ?>" alt="Service image" />
@@ -58,13 +58,11 @@ get_header();
 										<?php echo $fields['service_single_' . $i . '_text']; ?>
 									</p>
 									<div class="services-link">
-										<a href='<?php echo $fields['service_single_' . $i . '_link']; ?>'>Learn more</a>
+										<a href='<?php echo $fields['service_single_' . $i . '_link']['url']; ?>'>Learn more</a>
 									</div>
 								</div>
 							</div>
 						</div>
-
-
 
 					<?php } ?>
 				</div>
@@ -84,7 +82,7 @@ get_header();
 							<?php echo $fields['about_text']; ?>
 						</p>
 						<div class="about-link">
-							<a href='<?php echo $fields['about_link']; ?>'>Learn more <img src="/wp-content/uploads/2022/07/read-more-arrow-white-1.svg" alt="right arrow" /></a>
+							<a href='<?php echo $fields['about_link']['url']; ?>'>Learn more <img src="/wp-content/uploads/2022/07/read-more-arrow-white-1.svg" alt="right arrow" /></a>
 						</div>
 					</div>
 				</div>
@@ -130,54 +128,63 @@ get_header();
 				</div>
 			</div>
 		</section>
+		<section class="blog-section">
+			<h3 class="blog-section-title">
+				Our Blog
+			</h3>
+			<div class="container">
+				<div class="blog-posts-container">
+					<?php
+					query_posts('post_type=post&post_status=publish&posts_per_page=8&paged=' . get_query_var('paged'));
+					if (have_posts()) {
+						while (have_posts()) {
+							the_post();
+							$recent_posts = get_the_ID();
+
+							if (!has_post_thumbnail($recent_posts)) {
+								$image_id = 11062;
+							} else {
+								$image_id = get_post_thumbnail_id($recent_posts);
+							}
+							$excerpt = wp_trim_words(get_the_content(), '20'); // $excerpt contains the excerpt of the concerned post
+							$cats = get_the_category($postid);
+							$title = get_the_title($recent_posts);
+							$datef = date('F');
+							$datej =  date('j');
+							$datey =  date('Y');
+					?>
+							<div class="blog-wrap-container col-xs-12 col-md-6">
+								<div class="blog-post-container">
+									<div class="blog-post-image-container">
+										<?php echo wp_get_attachment_image($image_id, 'full'); ?>
+										<div class="blog-post-date">
+											<p><?php echo $datef; ?></p>
+											<p><?php echo $datej; ?>,</p>
+											<p><?php echo $datey; ?></p>
+										</div>
+									</div>
+									<h3>
+										<a href="<?php echo get_permalink($recent_posts) ?>"><?php echo $title; ?></a>
+									</h3>
+									<p class="blog-post-excerpt"><?php echo $excerpt ?></p>
+									<a class="blog-post-more" href="<?php echo get_permalink($recent_posts) ?>">Read More <img src="/wp-content/uploads/2022/07/read-more-arrow-white-1.svg" alt="right arrow" /></a>
+								</div>
+							</div>
+					<?php }
+					} ?>
+					<div class="md-pagination-holder navigation">
+						<?php pagination_bar(); ?>
+					</div>
+					<?php wp_reset_query(); ?>
+				</div>
+			</div>
+		</section>
 		<section class="pictures">
 			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_1']['url']; ?>" alt="Boxes" />
 			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_2']['url']; ?>" alt="Happy couple drinking coffee near boxes" />
 			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_3']['url']; ?>" alt="Moving truck" />
 			<img class="col-lg-3 col-md-6 col-sm-6 col-xs-6" src="<?php echo $fields['pictures_4']['url']; ?>" alt="Family moving boxes" />
 		</section>
-
-		<!-- 	<section class="blog-section home-sections">
-      <div class="container section-container">
-        <div class="content-container">
-          <h2>Latest News</h2>
-          <div class="blog-posts-container">
-  					<?php
-						$args = array(
-							'numberposts' => '3',
-							'post_type'   => 'post',
-							'post_status' => 'publish'
-						);
-						$recent_posts = wp_get_recent_posts($args);
-						foreach ($recent_posts as $recent) {
-							$postid = $recent["ID"];
-							if (!has_post_thumbnail($recent["ID"])) {
-								$image_id = 3962;
-							} else {
-								$image_id = get_post_thumbnail_id($recent["ID"]);
-							}
-							$excerpt = wp_trim_words($recent['post_content'], '20'); // $excerpt contains the excerpt of the concerned post
-							$cats = get_the_category($postid);
-							$date = date('F j. Y', strtotime($recent['post_date']));
-						?>
-                    <div class="blog-post-container">
-                      <div class="blog-post-image-container">
-                        <?php echo wp_get_attachment_image($image_id); ?>
-                        <div class="blog-post-date"><p><?php echo $date ?></p></div>
-                      </div>
-                      <h3>
-                        <?php echo $recent["post_title"] ?>
-                        <a href="<?php echo get_permalink($postid) ?>"></a>
-                      </h3>
-                      <p class="blog-post-excerpt"><?php echo $excerpt ?></p>
-                      <a href="<?php echo get_permalink($postid) ?>">Read More</a>
-                    </div>
-						<?php } ?>
-          </div>
-        </div>
-      </div>
-    </section>
- -->
 	</div>
 </main>
 

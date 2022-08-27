@@ -10,7 +10,7 @@
 
 if (!defined('_S_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('_S_VERSION', '1.0.005');
+    define('_S_VERSION', '1.0.007');
 }
 
 if (!function_exists('md_theme_setup')) :
@@ -173,6 +173,8 @@ function md_theme_scripts()
 
     wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), _S_VERSION, true);
 
+    wp_enqueue_script('forms-script', get_template_directory_uri() . '/assets/js/forms.js', array('jquery'), _S_VERSION, true);
+
     wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap', array(), $alwayssameversion);
 
     //If we need click in cf7 form
@@ -222,38 +224,18 @@ require_once get_template_directory() . '/inc/tgm-activate.php';
 //     if ( gf_upgrade()->get_submissions_block() ) {
 //         return $message;
 //     }
-
+ 
 //     $message = "<div class='validation_error'><p>TEST There was a problem with your submission. Errors have been highlighted below.</p>";
 //     $message .= '<ul>';
-
+ 
 //     foreach ( $form['fields'] as $field ) {
 //         if ( $field->failed_validation ) {
 //             $message .= sprintf( '<li>%s - %s</li>', GFCommon::get_label( $field ), $field->validation_message );
 //         }
 //     }
-
+ 
 //     $message .= '</ul></div>';
-
+ 
 //     return $message;
 // }, 10, 2 );
 // 
-
-// function wpb_hook_javascript() {
-//   if (is_single ('297')) { 
-//     
-?>
-<script type="text/javascript">
-    // 			  const addClass = () => {
-    // 				var element = document.getElementById("secondary");
-    // 				element.classList.add("container");
-    // 				  alert("test");
-    // 		     };
-    // 				 addClass();
-    // 				 document.getElementById("secondary").classList.add("container");
-    // 				 alert("test")	
-    //         
-</script>
-<?php
-//   }
-// }
-// add_action('wp_head', 'wpb_hook_javascript');
