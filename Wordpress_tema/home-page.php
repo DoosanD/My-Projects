@@ -153,7 +153,7 @@ get_header();
 							$datej =  date('j');
 							$datey =  date('Y');
 					?>
-							<div class="blog-wrap-container col-xs-12 col-md-6">
+							<div class="blog-wrap-container col-xs-12 col-sm-12 col-xl-12 col-md-6">
 								<div class="blog-post-container">
 									<div class="blog-post-image-container">
 										<?php echo wp_get_attachment_image($image_id, 'full'); ?>

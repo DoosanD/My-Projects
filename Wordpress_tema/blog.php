@@ -57,7 +57,7 @@ $backgroundimg = get_the_post_thumbnail_url();
                             $datej =  date('j');
                             $datey =  date('Y');
                     ?>
-                            <div class="blog-wrap-container col-xs-12 col-md-6">
+                            <div class="blog-wrap-container col-xs-12 col-xl-12 col-md-12">
                                 <div class="blog-post-container">
                                     <div class="blog-post-image-container">
                                         <?php echo wp_get_attachment_image($image_id, 'full'); ?>

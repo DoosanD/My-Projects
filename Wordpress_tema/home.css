@@ -928,7 +928,13 @@ body img.gform_ajax_spinner {
 .page-id-11 .blog-post-excerpt{
 	padding:5px 20px 25px 20px;
 }
-.blog-post-container a:first-child,.blog-post-container a:first-child:hover,.blog-post-container a:first-child:focus,.blog-post-container a:first-child:link,.blog-post-container a:first-child:active, .blog-post-title, .blog-post-container a:first-child:visited{
+.blog-post-container a:first-child,
+.blog-post-container a:first-child:hover,
+.blog-post-container a:first-child:focus,
+.blog-post-container a:first-child:link,
+.blog-post-container a:first-child:active,
+.blog-post-title,
+.blog-post-container a:first-child:visited{
 	color: #2A2A2A;
 }
 .blog-post-excerpt{
