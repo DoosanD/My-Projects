@@ -11,7 +11,7 @@
  */
 $fields = get_fields('option');
 ?>
-<?php if (!is_front_page()) : ?>
+<?php if (!is_front_page() and !is_page(array(131)) and !is_page(array(125))) : ?>
 	<div class="container">
 		<div class="before-footer col-lg-8 col-md-7">
 			<div class="contact-form ">
@@ -32,7 +32,7 @@ $fields = get_fields('option');
 			<div class="footer-in">
 				<div class="footer-left col-lg-3">
 					<div class="single-left-footer">
-						<img src="<?php echo $fields['footer__badge']['url']; ?>" alt="logo" />
+						<a href="https://testcrosscountrymovers.moverdev.com/" class="custom-logo-link" rel="home" aria-current="page"><img src="<?php echo $fields['footer__badge']['url']; ?>" alt="logo" /></a>
 					</div>
 				</div>
 				<div class="footer-mid col-lg-6">

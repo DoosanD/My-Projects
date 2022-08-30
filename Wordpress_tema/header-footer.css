@@ -344,7 +344,7 @@
 }
 @media screen and (max-width: 438px){
 	.hero-right{
-		top: -140px;
+/* 		top: -140px; */
 	}
 	 .hero-left ul li{
 		width:100%;
@@ -383,11 +383,14 @@
 /* 	margin-left: 47px; */
 }
 .page-id-119 .before-footer {
-	margin-left: 47px;
+	margin-left: 53px;
 }
-.page-id-123 .before-footer, .page-id-131 .before-footer, .page-id-121 .before-footer,.page-id-125 .before-footer {
+.page-id-131 .before-footer, .page-id-121 .before-footer,.page-id-125 .before-footer {
 /* 	margin-top:-265px; */
 	margin:0;
+}
+.page-id-123 .before-footer {
+	margin-left:16px;
 }
 @media screen and (max-width: 991px){
 	.page-id-131 .hero-right .hero-form{
@@ -398,7 +401,7 @@
 @media screen and (max-width: 1199px){
 	.page-id-123 .before-footer{
 		margin-top:0;
-		margin-left: 0;
+		margin-left: 14px;
 	}
 }
 .gform_footer.top_label{
@@ -415,7 +418,7 @@
 	margin-top: -137px;
 }
 .page-id-125 .before-footer{
-	margin-top: -240px;
+	margin-top: -220px;
 }
 .page-id-121 .before-footer{
 	margin-top: -110px;
@@ -429,7 +432,7 @@
 		margin-left: 0px !important;
 	}
 	.page-id-125 .before-footer {
-		margin-top: -165px;
+		margin-top: -140px;
 	}
 	.page-id-119 .before-footer,.page-id-131 .before-footer  {
 		margin-top: 50px;
@@ -437,9 +440,14 @@
 	}
 }
 @media screen and (max-width: 991px){
-	.page-id-125 .before-footer, .page-id-121 .before-footer{
-		margin-top: 50px;
+	.page-id-125 .before-footer {
+		margin-top: -285px;
 		margin-left: 0px;
+		margin-bottom: 400px;
+	}
+	.page-id-121 .before-footer {
+		margin-top:50px;
+		margin-left:0;
 	}
 	.page-id-339 .before-footer{
 		margin-top: 80px;

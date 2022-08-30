@@ -140,6 +140,15 @@ get_header();
 						while (have_posts()) {
 							the_post();
 							$recent_posts = get_the_ID();
+							$postId = get_the_ID();
+							// echo get_the_time('Y-m-d', $postId);
+							$posts = new WP_Query(array('post_type' => 'post')); //retrieve posts
+							if ($posts->have_posts()) {
+								while ($posts->have_posts()) {
+									$posts->the_post();
+									get_the_time('Y-m-d'); //date in Y-m-d format.
+								}
+							}
 
 							if (!has_post_thumbnail($recent_posts)) {
 								$image_id = 11062;
@@ -149,9 +158,9 @@ get_header();
 							$excerpt = wp_trim_words(get_the_content(), '20'); // $excerpt contains the excerpt of the concerned post
 							$cats = get_the_category($postid);
 							$title = get_the_title($recent_posts);
-							$datef = date('F');
-							$datej =  date('j');
-							$datey =  date('Y');
+							$datef = get_the_time('F j, Y', $postId);
+							//$datej =  date('j');
+							//$datey =  date('Y');
 					?>
 							<div class="blog-wrap-container col-xs-12 col-sm-12 col-xl-12 col-md-6">
 								<div class="blog-post-container">
@@ -159,8 +168,6 @@ get_header();
 										<?php echo wp_get_attachment_image($image_id, 'full'); ?>
 										<div class="blog-post-date">
 											<p><?php echo $datef; ?></p>
-											<p><?php echo $datej; ?>,</p>
-											<p><?php echo $datey; ?></p>
 										</div>
 									</div>
 									<h3>
