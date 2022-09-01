@@ -696,6 +696,9 @@ figcaption{
 	.page-id-335 .content-wrapper {
 	  width: 106%;
 	}
+	br {
+		display:none;
+	}
 }
 .page-id-335 .contact-form {
 	width: 100%;
