@@ -25,7 +25,23 @@ class SIMPLE_CONTACT_FORM
 
    public function CREATE_CUSTOM_POST_TYPE()
    {
-      echo '<script>alert("ITS ALIVE")</script>';
+      $args = array(
+
+         'public' => true,
+         'has_archive' => true,
+         'supports' => array('title'),
+         'exclude_from_search' => true,
+         'publicly_queryable' => false,
+         'capabilaty' => 'manage_options',
+         'labels' => array(
+            'name' => 'Contact Form',
+            'singular_name' => 'Contact Form Entry',
+         ),
+         'menu_icon' => 'dashicons-media-text',
+
+      );
+
+      register_post_type('simple_contact_form', $args);
    }
 }
 
