@@ -4,8 +4,8 @@
  * Plugin Name: Simple Contact Form
  * Description: Simple Contact Form Tutorial
  * Author: Dusan Davic
- * Author URI: http://dusand.tk
- * Version: 1.0.2
+ * Author URI: https://www.linkedin.com/in/du%C5%A1an-davi%C4%87/
+ * Version: 1.0.3
  * Text Domain: simple_contact_form
  * 
  */
@@ -28,6 +28,9 @@ class SIMPLE_CONTACT_FORM
 
       // Add Shortcode
       add_shortcode('contact-form', array($this, 'load_shortcode'));
+
+      // Load javascript
+      add_action('wp_footer', array($this, 'load_scripts'));
    }
 
    public function CREATE_CUSTOM_POST_TYPE()
@@ -83,6 +86,13 @@ class SIMPLE_CONTACT_FORM
             <button class="btn">Send Message!</button>
          </form>
       </div>
+   <?php }
+
+   public function load_scripts()
+   { ?>
+      <script>
+         alert("Does it work?");
+      </script>
 <?php }
 }
 
