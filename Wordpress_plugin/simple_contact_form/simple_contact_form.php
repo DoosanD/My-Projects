@@ -126,7 +126,26 @@ class SIMPLE_CONTACT_FORM
 
    public function handle_contact_form($data)
    {
-      echo "hello this endpoint is working, i think...";
+      $headers = $data->get_headers();
+      $params = $data->get_params();
+      $nonce = $headers['x_wp_nonce'][0];
+
+      if (!wp_verify_nonce($nonce, 'wp_rest')) {
+
+         return new WP_REST_Response('Message not sent!', 422);
+      }
+
+      $post_id = wp_insert_post([
+
+         'post_type' => 'simple_contact_form',
+         'post_title' => 'Contact enquiry',
+         'post_status' => 'publish'
+
+      ]);
+
+      if ($post_id) {
+         return new WP_REST_Response('Thank you for your email', 200);
+      }
    }
 }
 
